@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const items = [
   {"id": 1, "name": "Carregador 33w Turbo tipo C", "description": "Novo / sem avarias / sim. Valor original: R$ 65", "price": "R$ 30", "image": "https://via.placeholder.com/300"},
   {"id": 2, "name": "Powerbank por indução 5000mAh", "description": "Usado / 1 mês / sim. Valor original: R$ 90", "price": "R$ 40", "image": "https://via.placeholder.com/300"},
-  {"id": 3, "name": "JBL Charge Essencial 2", "description": "Usado / 1 ano / sim. Valor original: R$ 900", "price": "R$ 450", "image": "https://via.placeholder.com/300"},
+  {"id": 3, "name": "JBL Charge Essencial 2", "description": "Usado / 1 ano / sim. Valor original: R$ 900", "price": "R$ 450", "image": "/somjbl.jpeg"},
   {"id": 4, "name": "Umidificador", "description": "Usado / 6 meses / sim. Valor original: R$ 60", "price": "R$ 25", "image": "https://via.placeholder.com/300"},
   {"id": 5, "name": "Ventilador Pequeno", "description": "Usado / 1 ano / sim. Valor original: R$ 100", "price": "R$ 50", "image": "https://via.placeholder.com/300"},
   {"id": 6, "name": "Ayrfry Elgin", "description": "Usado / 1 ano / sim. Valor original: R$ 250", "price": "R$ 150", "image": "https://via.placeholder.com/300"},
@@ -12,7 +12,7 @@ const items = [
   {"id": 8, "name": "Geladeira Eletrolux 362 litros", "description": "Usado / 5 anos / sim. Valor original: R$ 1700", "price": "R$ 500", "image": "https://via.placeholder.com/300"},
   {"id": 9, "name": "Fogão Atlas 4 bocas ( sem avarias )", "description": "Usado / 2 anos / sim. Valor original: R$ 1200", "price": "R$ 700", "image": "https://via.placeholder.com/300"},
   {"id": 10, "name": "Televisão semp 49p ( novo )", "description": "Usado / 8 meses / sim. Valor original: R$ 2000", "price": "R$ 1800", "image": "https://via.placeholder.com/300"},
-  {"id": 11, "name": "Sofá Beje ( laterais inclinadas )", "description": "Usado / 1 ano / sim. Valor original: R$ 1100", "price": "R$ 650", "image": "https://github.com/Ryaanlucas/bazar/blob/90550fa5b9729248760b238b075e09281c2d62a5/public/sofa.jpeg"},
+  {"id": 11, "name": "Sofá Beje ( laterais inclinadas )", "description": "Usado / 1 ano / sim. Valor original: R$ 1100", "price": "R$ 650", "image": "/sofa.jpeg"},
   {"id": 12, "name": "Escudo Capitão América ( metal )", "description": "Usado / 8 meses / sim. Valor original: R$ 250", "price": "R$ 120", "image": "https://via.placeholder.com/300"},
   {"id": 13, "name": "Cama inflável Solteiro", "description": "Usado / 1 ano / sim. Valor original: R$ 180", "price": "R$ 90", "image": "https://via.placeholder.com/300"},
   {"id": 14, "name": "Patins Inline Traxart 41", "description": "Usado / 2 anos / sim. Valor original: R$ 450", "price": "R$ 200", "image": "https://via.placeholder.com/300"},
