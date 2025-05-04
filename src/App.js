@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <div style={{ backgroundColor: '#b5d67d', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1 style={{ fontSize: '3rem',backgroundColor: '#ffffff', fontWeight: 'bold', marginBottom: '1rem' }}>Bazar de viagem ✈️</h1>
+      <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '1rem' }}>Bazar de viagem ✈️</h1>
       <input
         type="text"
         placeholder="Buscar produto..."
