@@ -12,7 +12,7 @@ const items = [
   {"id": 8, "name": "Geladeira Eletrolux 362 litros", "description": "Usado / 5 anos / sim. Valor original: R$ 1700", "price": "R$ 500", "image": "https://via.placeholder.com/300"},
   {"id": 9, "name": "Fogão Atlas 4 bocas ( sem avarias )", "description": "Usado / 2 anos / sim. Valor original: R$ 1200", "price": "R$ 700", "image": "https://via.placeholder.com/300"},
   {"id": 10, "name": "Televisão semp 49p ( novo )", "description": "Usado / 8 meses / sim. Valor original: R$ 2000", "price": "R$ 1800", "image": "https://via.placeholder.com/300"},
-  {"id": 11, "name": "Sofá Beje ( laterais inclinadas )", "description": "Usado / 1 ano / sim. Valor original: R$ 1100", "price": "R$ 650", "image": "/imagens/sofa.jpg"},
+  {"id": 11, "name": "Sofá Beje ( laterais inclinadas )", "description": "Usado / 1 ano / sim. Valor original: R$ 1100", "price": "R$ 650", "image": "public/sofa.jpeg"},
   {"id": 12, "name": "Escudo Capitão América ( metal )", "description": "Usado / 8 meses / sim. Valor original: R$ 250", "price": "R$ 120", "image": "https://via.placeholder.com/300"},
   {"id": 13, "name": "Cama inflável Solteiro", "description": "Usado / 1 ano / sim. Valor original: R$ 180", "price": "R$ 90", "image": "https://via.placeholder.com/300"},
   {"id": 14, "name": "Patins Inline Traxart 41", "description": "Usado / 2 anos / sim. Valor original: R$ 450", "price": "R$ 200", "image": "https://via.placeholder.com/300"},
