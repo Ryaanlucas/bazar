@@ -18,13 +18,13 @@ export default function App() {
 
   return (
     <div style={{ backgroundColor: '#b5d67d', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '1rem' }}>Catálogo de Vendas</h1>
+      <h1 style={{ fontSize: '3rem',backgroundColor: '#ffffff', fontWeight: 'bold', marginBottom: '1rem' }}>Bazar de viagem ✈️</h1>
       <input
         type="text"
         placeholder="Buscar produto..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        style={{ padding: '0.5rem', width: '100%', marginBottom: '2rem' }}
+        style={{ padding: '0.7rem', width: '100%', marginBottom: '2rem',borderRadius: '0.75rem' }}
       />
       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
         {filteredItems.map((item) => (
