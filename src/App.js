@@ -1,12 +1,174 @@
 import React, { useState } from "react";
 
 const items = [
-  {"id": 1, "name": "Carregador 33w Turbo tipo C", "description": "Novo / sem avarias / sim. Valor original: R$ 65", "price": "R$ 30", "image": "/carregador.jpeg"},
-  {"id": 2, "name": "Powerbank por indução 5000mAh", "description": "Usado / 1 mês / sim. Valor original: R$ 90", "price": "R$ 40", "image": "/powerbank.jpeg"},
-  {"id": 3, "name": "JBL Charge Essencial 2", "description": "Usado / 1 ano / sim. Valor original: R$ 900", "price": "R$ 450", "image": "/somjbl.jpeg"},
-  {"id": 11, "name": "Sofá Beje ( laterais inclinadas )", "description": "Usado / 1 ano / sim. Valor original: R$ 1100", "price": "R$ 650", "image": "/sofa.jpeg"},
-  {"id": 23, "name": "Cadeira Escritório preta/azul", "description": "Usado / com avarias. Valor original: R$ 750", "price": "R$ 300", "image": "/cadeira_escrit.jpeg"},
-  {"id": 18, "name": "2 Poltronas Chaise Sintética Média", "description": "Usado / 1 ano / sim. Valor original: R$ 300", "price": "R$ 150", "image": "/poltrona.jpeg"}
+  {
+    id: 1,
+    name: "Carregador 33w Turbo tipo C",
+    description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 65",
+    price: "R$ 30",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 2,
+    name: "Powerbank por indução 5000mAh",
+    description: "usado / 1 mês. Tipo de venda: imediata. Valor original: R$ 90",
+    price: "R$ 40",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 3,
+    name: "JBL Charge Essencial 2",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 900",
+    price: "R$ 450",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 4,
+    name: "Umidificador",
+    description: "usado / 6 meses. Tipo de venda: imediata. Valor original: R$ 60",
+    price: "R$ 25",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 5,
+    name: "Ventilador Pequeno",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100",
+    price: "R$ 50",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 6,
+    name: "Ayrfry Elgin",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 250",
+    price: "R$ 150",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 7,
+    name: "Aspirador inteligente",
+    description: "pouco usado. Tipo de venda: imediata. Valor original: R$ 50",
+    price: "R$ 30",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 8,
+    name: "Geladeira Eletrolux 362 litros",
+    description: "usado / 5 anos. Tipo de venda: final de maio. Valor original: R$ 1700",
+    price: "R$ 500",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 9,
+    name: "Fogão Atlas 4 bocas ( sem avarias )",
+    description: "usado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1200",
+    price: "R$ 700",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 10,
+    name: "Televisão semp 50p ( novo )",
+    description: "usado / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
+    price: "R$ 1700",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 11,
+    name: "Sofá Beje ( laterais inclinadas )",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 1100",
+    price: "R$ 650",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 12,
+    name: "Escudo Capitão América ( metal )",
+    description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 250",
+    price: "R$ 120",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 13,
+    name: "Cama inflável Solteiro",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 180",
+    price: "R$ 90",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 14,
+    name: "Patins Inline Traxart 41",
+    description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 450",
+    price: "R$ 200",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 15,
+    name: "Abajur luz amarela ( c/ avarias )",
+    description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 45",
+    price: "R$ 15",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 16,
+    name: "Ferro de passar ( bom estado )",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100",
+    price: "R$ 50",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 17,
+    name: "Varal de chão Aço",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100",
+    price: "R$ 50",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 18,
+    name: "2 Poltronas Chaise Sintética Média",
+    description: "usado / 1 ano. Tipo de venda: final de maio. Valor original: R$ 300",
+    price: "R$ 150",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 19,
+    name: "Cômoda de Madeira 5 gavetas",
+    description: "usado / 1 ano. Tipo de venda: final de maio. Valor original: R$ 300",
+    price: "R$ 120",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 20,
+    name: "Caixa de Transporte Felino",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100",
+    price: "R$ 50",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 21,
+    name: "Alexa echo Dot 3° geração",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 250",
+    price: "R$ 120",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 22,
+    name: "Heartstopper Volumes 1, 2 e 3",
+    description: "usado / 6 meses. Tipo de venda: imediata. Valor original: R$ 150",
+    price: "R$ 60",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 23,
+    name: "Monitor Dell",
+    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 800",
+    price: "R$ 350",
+    image: "/placeholder.jpeg"
+  },
+  {
+    id: 24,
+    name: "Cadeira Escritório preta/azul",
+    description: "com avarias. Tipo de venda: imediata. Valor original: R$ 750",
+    price: "R$ 300",
+    image: "/placeholder.jpeg"
+  }
 ];
 
 export default function App() {
@@ -18,13 +180,13 @@ export default function App() {
 
   return (
     <div style={{ backgroundColor: '#b5d67d', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '1rem' }}>Bazar de viagem ✈️</h1>
+      <h1 style={{ fontSize: '2.5rem', fontWeight: '900', marginBottom: '2rem', color: '#2d4e1d', textAlign: 'center', fontFamily: 'Arial Black, sans-serif' }}>Bazar de viagem ✈️✈️</h1>
       <input
         type="text"
         placeholder="Buscar produto..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        style={{ padding: '0.7rem', width: '100%', marginBottom: '2rem',borderRadius: '0.75rem' }}
+        style={{ padding: '0.5rem', width: '100%', marginBottom: '2rem', borderRadius: '12px', border: '1px solid #ccc' }}
       />
       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
         {filteredItems.map((item) => (
