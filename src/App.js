@@ -241,7 +241,8 @@ const items = [
     description: "Usado / 2 anos. Tipo de venda: imediata",
     price: "R$ 50",
     image: "/cafeteira_starwars.jpeg",
-    tag: "disponível"
+    tag: "disponível",
+    sold:true
   },
   {
     id: 32,
