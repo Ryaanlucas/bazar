@@ -75,7 +75,7 @@ const items = [
   },
   {
     id: 10,
-    name: "Televisão Semp Roku 50p",
+    name: "Tv Semp Roku 50p",
     description: "usado / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
     price: "R$ 1700",
     image: "/tv50.jpeg",
@@ -102,7 +102,7 @@ const items = [
     id: 13,
     name: "Colchão Inflável Solteiro Multiuso Até 100Kgs",
     description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 135",
-    price: "R$ 60",
+    price: "R$ 80",
     image: "/colchao.jpeg",
     tag: "disponível"
   },
@@ -157,7 +157,7 @@ const items = [
   },
   {
     id: 20,
-    name: "Caixa de Transporte Felino",
+    name: "Caixa de Transporte animal",
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 60",
     image: "/caixa_felino.jpeg",
