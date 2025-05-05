@@ -279,7 +279,7 @@ export default function App() {
   return (
     <div style={{ backgroundColor: darkMode ? '#222' : '#b5d67d', color: darkMode ? '#fff' : '#000', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#2d4e1d', textAlign: 'center', fontFamily: 'Arial Black, sans-serif', flex: 1 }}>Bazar Virtual de Ryan e Alef</h1>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#2d4e1d', textAlign: 'center', fontFamily: 'Arial Black, sans-serif', flex: 1 }}> Bazar Virtual de Ryan e Alef </h1>
         <button
           onClick={() => setDarkMode(!darkMode)}
           style={{ marginLeft: '1rem', padding: '0.5rem 1rem', borderRadius: '12px', border: 'none', backgroundColor: '#7cbb00', color: '#fff', cursor: 'pointer' }}
