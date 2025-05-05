@@ -283,8 +283,8 @@ const items = [
   {
     id: 37,
     name: "5 Potes herméticos",
-    description: "Sem defeitos, Tipo de venda: imediata. Valor original: R$ 60",
-    price: "R$ 30",
+    description: "Sem defeitos, Tipo de venda: imediata. Valor original: R$ 80",
+    price: "R$ 50",
     image: "/potes.jpeg",
   }
 ];
