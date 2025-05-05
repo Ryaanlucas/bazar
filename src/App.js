@@ -280,7 +280,7 @@ export default function App() {
     <div style={{ backgroundColor: darkMode ? '#1d1d1d' : '#a3b18a', color: darkMode ? '#fff' : '#000', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-  <img src="/nova_logo.png"
+  <img src="/logo_mala.png"
     alt="Logo Thrift"
     style={{
       maxWidth: '150px',
