@@ -152,7 +152,7 @@ const items = [
     description: "usado / 3 anos / com avaria. Tipo de venda: Imediata. Valor original: R$ 650",
     price: "R$ 300",
     image: "/cadeira_escrit.jpeg",
-    tag: "inddisponível",
+    tag: "indisponível",
     sold: true
   },
   {
