@@ -297,6 +297,25 @@ export default function App() {
   }}>
     Bazar Virtual - Ryan e Alef
   </h1>
+      <div style={{
+  backgroundColor: darkMode ? 'rgba(255, 255, 255, 0.05)' : 'rgba(255, 255, 255, 0.7)',
+  border: '1px solid #ccc',
+  borderRadius: '12px',
+  padding: '1rem 1.5rem',
+  marginTop: '1rem',
+  maxWidth: '800px',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  fontFamily: 'Arial, sans-serif',
+  color: darkMode ? '#eee' : '#2d4e1d',
+  fontSize: '1rem',
+  lineHeight: '1.6'
+}}>
+  👋 Oi! Seja bem-vindo ao nosso <strong>bazar virtual</strong>. <br />
+  Estamos disponibilizando alguns itens seminovos e usados para venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
+  Entre em contato conosco se desejar mais detalhes dos produtos e agendamento da retirada. <br /><br />
+  🌿 Sinta-se à vontade 🙂
+</div>
 </div>
         <button
           onClick={() => setDarkMode(!darkMode)}
