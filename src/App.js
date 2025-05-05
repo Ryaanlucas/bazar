@@ -216,7 +216,7 @@ const items = [
     name: "cafeteira star wars",
     description: "Usado / 2 anos. Tipo de venda: imediata",
     price: "R$ 50",
-    image: "/cafeteria_starwars.jpeg"
+    image: "/cafeteira_starwars.jpeg"
   },
   {
     id: 32,
