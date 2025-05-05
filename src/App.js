@@ -279,6 +279,13 @@ const items = [
     description: "Sem defeitos / 2 anos. Tipo de venda: imediata. Valor original: R$ 120",
     price: "R$ 45",
     image: "/teclado.jpeg",
+  },
+  {
+    id: 37,
+    name: "5 Potes herméticos",
+    description: "Sem defeitos, Tipo de venda: imediata. Valor original: R$ 60",
+    price: "R$ 30",
+    image: "/potes.jpeg",
   }
 ];
 
