@@ -43,9 +43,9 @@ const items = [
   },
   {
     id: 6,
-    name: "Airfry Elgin 4L",
-    description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 250",
-    price: "R$ 150",
+    name: "Air fryer Elgin 4L",
+    description: "usado / 1 ano e meio. Tipo de venda: imediata. Valor original: R$ 250",
+    price: "R$ 120",
     image: "/airfry.jpeg",
     tag: "disponível"
   },
@@ -75,7 +75,7 @@ const items = [
   },
   {
     id: 10,
-    name: "Televisão semp roku 50p",
+    name: "Televisão Semp Roku 50p",
     description: "usado / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
     price: "R$ 1700",
     image: "/tv50.jpeg",
