@@ -281,10 +281,10 @@ export default function App() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
   <img
-    src="/logo-clean.png"
+    src="/nova_logo.png"
     alt="Logo Thrift"
     style={{
-      maxWidth: '140px',
+      maxWidth: '150px',
       width: '100%',
       marginBottom: '1rem',
       filter: darkMode ? 'brightness(0.9)' : 'none'
