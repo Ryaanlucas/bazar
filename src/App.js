@@ -314,7 +314,7 @@ export default function App() {
   👋 Oi! Seja bem-vindo ao nosso <strong>bazar virtual</strong>. <br />
   Estamos disponibilizando alguns itens seminovos e usados para venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
   Entre em contato conosco se desejar mais detalhes dos produtos e agendamento da retirada. <br /><br />
-  🌿 Sinta-se à vontade 🙂
+  🌿 Sinta-se à vontade 😁
 </div>
 </div>
         <button
