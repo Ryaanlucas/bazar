@@ -279,7 +279,7 @@ export default function App() {
   return (
     <div
   style={{
-    backgroundImage: 'url(/bg-textura.png)',
+    backgroundImage: 'url(/logo.png)',
     backgroundSize: 'cover',
     backgroundRepeat: 'repeat',
     backgroundPosition: 'center',
