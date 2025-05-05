@@ -174,7 +174,7 @@ const items = [
     name: "Rosa do deserto / 1 ano",
     description: "Tipo de venda: imediata.",
     price: "R$ 30",
-    image: "/rosa_desertojpeg"
+    image: "/rosa_deserto.jpeg"
   },
   {
     id: 26,
