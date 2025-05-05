@@ -244,14 +244,24 @@ const items = [
 
 export default function App() {
   const [search, setSearch] = useState("");
+  const [darkMode, setDarkMode] = useState(false);
 
   const filteredItems = items.filter((item) =>
     item.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
-    <div style={{ backgroundColor: '#b5d67d', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1 style={{ fontSize: '2.5rem', fontWeight: '900', marginBottom: '2rem', color: '#2d4e1d', textAlign: 'center', fontFamily: 'Arial Black, sans-serif' }}>Bazar de viagem ✈️✈️</h1>
+    <div style={{ backgroundColor: darkMode ? '#222' : '#b5d67d', color: darkMode ? '#fff' : '#000', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#2d4e1d', textAlign: 'center', fontFamily: 'Arial Black, sans-serif', flex: 1 }}>Bazar de viagem ✈️✈️</h1>
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          style={{ marginLeft: '1rem', padding: '0.5rem 1rem', borderRadius: '12px', border: 'none', backgroundColor: '#7cbb00', color: '#fff', cursor: 'pointer' }}
+        >
+          {darkMode ? '☀️ Claro' : '🌙 Escuro'}
+        </button>
+      </div>
+
       <input
         type="text"
         placeholder="Buscar produto..."
@@ -259,23 +269,29 @@ export default function App() {
         onChange={(e) => setSearch(e.target.value)}
         style={{ padding: '0.5rem', width: '100%', marginBottom: '2rem', borderRadius: '12px', border: '1px solid #ccc' }}
       />
+
       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
         {filteredItems.map((item) => (
-          <div key={item.id} style={{ backgroundColor: 'white', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
-            <img
-              src={item.image}
-              alt={item.name}
-              style={{
-                width: '100%',
-                height: '350px',
-                objectFit: 'cover',
-                borderTopLeftRadius: '1rem',
-                borderTopRightRadius: '1rem',
-                transition: 'transform 0.3s ease-in-out'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-              onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-            />
+          <div key={item.id} style={{ backgroundColor: darkMode ? '#333' : 'white', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
+            <div style={{ position: 'relative', overflow: 'hidden' }}>
+              <img
+                src={item.image}
+                alt={item.name}
+                style={{
+                  width: '100%',
+                  height: '350px',
+                  objectFit: 'cover',
+                  transition: 'transform 0.3s ease-in-out',
+                  cursor: 'zoom-in'
+                }}
+                onClick={() => window.open(item.image, '_blank')}
+              />
+              {item.tag && (
+                <div style={{ position: 'absolute', top: '10px', left: '10px', backgroundColor: '#ff6347', color: '#fff', padding: '0.25rem 0.5rem', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 'bold' }}>
+                  {item.tag.toUpperCase()}
+                </div>
+              )}
+            </div>
             <div style={{ padding: '1rem' }}>
               <h2 style={{ fontSize: '1.25rem', color: '#4e6b1a', fontWeight: '600' }}>{item.name}</h2>
               <p style={{ fontSize: '0.875rem', color: '#666', margin: '0.5rem 0' }}>{item.description}</p>
