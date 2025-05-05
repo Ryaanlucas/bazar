@@ -70,7 +70,7 @@ const items = [
     name: "Fogão Atlas 4 bocas ( sem avarias )",
     description: "usado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1200",
     price: "R$ 700",
-    image: "/fogao.jpeg",
+    image: "/fogao.png",
     tag: "disponível"
   },
   {
