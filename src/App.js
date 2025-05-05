@@ -276,16 +276,9 @@ export default function App() {
     item.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  const handleCopyLink = (itemId) => {
-    const url = `${window.location.href}#item-${itemId}`;
-    navigator.clipboard.writeText(url).then(() => {
-      alert("Link copiado para a área de transferência!");
-    });
-  };
-
   return (
     <div style={{ backgroundColor: darkMode ? '#222' : '#b5d67d', color: darkMode ? '#fff' : '#000', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
         <h1 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#2d4e1d', textAlign: 'center', fontFamily: 'Arial Black, sans-serif', flex: 1 }}>Bazar de viagem ✈️✈️</h1>
         <button
           onClick={() => setDarkMode(!darkMode)}
@@ -305,7 +298,7 @@ export default function App() {
 
       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
         {filteredItems.map((item) => (
-          <div key={item.id} id={`item-${item.id}`} style={{ backgroundColor: darkMode ? '#333' : 'white', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+          <div key={item.id} style={{ backgroundColor: darkMode ? '#333' : 'white', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
             <div style={{ position: 'relative', overflow: 'hidden' }}>
               <img
                 src={item.image}
@@ -325,34 +318,24 @@ export default function App() {
                 </div>
               )}
             </div>
-            <div style={{ padding: '1rem', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-              <div>
-                <h2 style={{ fontSize: '1.25rem', color: '#4e6b1a', fontWeight: '600' }}>{item.name}</h2>
-                <p style={{ fontSize: '0.875rem', color: '#666', margin: '0.5rem 0' }}>{item.description}</p>
-                <p style={{ fontWeight: 'bold', fontSize: '1.125rem', color: '#4e6b1a' }}>{item.price}</p>
-              </div>
-              <div>
-                {!item.sold ? (
-                  <a
-                    href="https://wa.me/5592993770892?text=Ol%C3%A1%2C%20estava%20olhando%20seu%20bazar%20e%20me%20interessei%20por%20alguns%20itens%20%F0%9F%98%8A%2C%20poderia%20conversar%3F."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#7cbb00', color: 'white', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', textDecoration: 'none', fontSize: '1rem', width: '100%' }}
-                  >
-                    Falar no WhatsApp
-                  </a>
-                ) : (
-                  <div style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#ccc', color: '#444', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', fontSize: '1rem', fontWeight: 'bold', width: '100%' }}>
-                    Vendido
-                  </div>
-                )}
-                <button
-                  onClick={() => handleCopyLink(item.id)}
-                  style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', backgroundColor: '#eee', border: '1px solid #bbb', borderRadius: '0.75rem', cursor: 'pointer', fontSize: '0.875rem', width: '100%' }}
+            <div style={{ padding: '1rem' }}>
+              <h2 style={{ fontSize: '1.25rem', color: '#4e6b1a', fontWeight: '600' }}>{item.name}</h2>
+              <p style={{ fontSize: '0.875rem', color: '#666', margin: '0.5rem 0' }}>{item.description}</p>
+              <p style={{ fontWeight: 'bold', fontSize: '1.125rem', color: '#4e6b1a' }}>{item.price}</p>
+              {!item.sold ? (
+                <a
+                  href="https://wa.me/5592993770892?text=Ol%C3%A1%2C%20estava%20olhando%20seu%20bazar%20e%20me%20interessei%20por%20alguns%20itens%20%F0%9F%98%8A%2C%20poderia%20conversar%3F."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#7cbb00', color: 'white', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', textDecoration: 'none', fontSize: '1rem' }}
                 >
-                  📎 Copiar link do item
-                </button>
-              </div>
+                  Falar no WhatsApp
+                </a>
+              ) : (
+                <div style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#ccc', color: '#444', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', fontSize: '1rem', fontWeight: 'bold' }}>
+                  Vendido
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -360,5 +343,6 @@ export default function App() {
     </div>
   );
 }
+
 
 
