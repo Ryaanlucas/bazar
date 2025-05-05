@@ -279,9 +279,23 @@ export default function App() {
   return (
     <div style={{ backgroundColor: darkMode ? '#1d1d1d' : '#a3b18a', color: darkMode ? '#fff' : '#000', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '1.5rem' }}>
-  <img src="/logo.png" alt="Logo Thrift" style={{ width: '120px', marginBottom: '1rem' }} />
-  <h1 style={{ fontSize: '2rem', fontWeight: '900', color: '#2d4e1d', textAlign: 'center', fontFamily: 'Arial Black, sans-serif' }}>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+  <img
+    src="/logo-clean.png"
+    alt="Logo Thrift"
+    style={{
+      maxWidth: '140px',
+      width: '100%',
+      marginBottom: '1rem',
+      filter: darkMode ? 'brightness(0.9)' : 'none'
+    }}
+  />
+  <h1 style={{
+    fontSize: '2rem',
+    fontWeight: '900',
+    color: '#2d4e1d',
+    fontFamily: 'Arial Black, sans-serif'
+  }}>
     Bazar Virtual - Ryan e Alef
   </h1>
 </div>
