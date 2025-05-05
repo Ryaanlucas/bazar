@@ -21,7 +21,8 @@ const items = [
     name: "JBL Charge Essencial 2",
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 900",
     price: "R$ 450",
-    image: "/somjbl.jpeg"
+    image: "/somjbl.jpeg",
+    tag: "disponível"
   },
   {
     id: 4,
@@ -224,7 +225,8 @@ const items = [
     name: "Espada de São Jorge pequena",
     description: "Tipo de venda: imediata",
     price: "R$ 25",
-    image: "/espada_sao_jorge_pequena.jpeg"
+    image: "/espada_sao_jorge_pequena.jpeg",
+    sold: true
   }
 ];
 
