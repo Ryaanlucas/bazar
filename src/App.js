@@ -111,7 +111,7 @@ const items = [
     name: "Patins Inline Traxart 41",
     description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 900",
     price: "R$ 350",
-    image: "/placeholder.jpeg",
+    image: "/patins.jpeg",
     tag: "disponível"
   },
   {
@@ -184,7 +184,7 @@ const items = [
     name: "Monitor Dell",
     description: "usado / 1 ano. Tipo de venda: final de maio. Valor original: R$ 1400",
     price: "R$ 800",
-    image: "/monitor.jpeg",
+    image: "/monitordell.jpeg",
     tag: "disponível"
   },
   {
