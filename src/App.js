@@ -109,7 +109,7 @@ const items = [
   {
     id: 14,
     name: "Patins Inline Traxart 41",
-    description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 900",
+    description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 900",
     price: "R$ 350",
     image: "/patins.jpeg",
     tag: "disponível"
@@ -182,7 +182,7 @@ const items = [
   {
     id: 23,
     name: "Monitor Dell",
-    description: "usado / 1 ano. Tipo de venda: final de maio. Valor original: R$ 1400",
+    description: "usado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1400",
     price: "R$ 800",
     image: "/monitordell.jpeg",
     tag: "disponível"
@@ -214,8 +214,8 @@ const items = [
   {
     id: 28,
     name: "Sapatos DARMAND Marrom seminovo",
-    description: "Usado poucas vezes / tamano 41/41. Tipo de venda: imediata",
-    price: "R$ 80",
+    description: "Usado poucas vezes / tamano 41/41. Tipo de venda: imediata. Valor original: R$ 250",
+    price: "R$ 90",
     image: "/sapato_darmand.jpeg",
     tag: "disponível"
   },
@@ -265,6 +265,20 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 25",
     image: "/espada_sao_jorge_pequena.jpeg",
+  },
+  {
+    id: 35,
+    name: "pesos 3kg cada",
+    description: "Tipo de venda: imediata",
+    price: "R$ 15",
+    image: "/pesos.jpeg",
+  },
+  {
+    id: 36,
+    name: "Teclado POSITIVO",
+    description: "Sem defeitos / 2 anos. Tipo de venda: imediata. Valor original: R$ 120",
+    price: "R$ 45",
+    image: "/espada_sao_jorge_pequena.jpeg",
   }
 ];
 
@@ -312,7 +326,7 @@ export default function App() {
   lineHeight: '1.6'
 }}>
   👋 Oi! Seja bem-vindo ao nosso <strong>bazar virtual</strong>. <br />
-  Estamos disponibilizando alguns itens seminovos e usados para venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
+  Estamos disponibilizando alguns itens novos,seminovos e usados para venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
   Entre em contato conosco se desejar mais detalhes dos produtos e agendamento da retirada. <br /><br />
   🌿 Sinta-se à vontade 😁
 </div>
