@@ -265,6 +265,7 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 25",
     image: "/espada_sao_jorge_pequena.jpeg",
+    tag: "disponível"
   },
   {
     id: 35,
@@ -272,6 +273,7 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 15",
     image: "/pesos.jpeg",
+    tag: "disponível"
   },
   {
     id: 36,
@@ -279,6 +281,7 @@ const items = [
     description: "Sem defeitos / 2 anos. Tipo de venda: imediata. Valor original: R$ 120",
     price: "R$ 45",
     image: "/teclado.jpeg",
+    tag: "disponível"
   },
   {
     id: 37,
@@ -286,6 +289,7 @@ const items = [
     description: "Sem defeitos, Tipo de venda: imediata. Valor original: R$ 80",
     price: "R$ 50",
     image: "/potes.jpeg",
+    tag: "disponível"
   },
   {
     id: 38,
@@ -293,6 +297,7 @@ const items = [
     description: "usado / Tipo de venda: imediata. Valor original: R$ 50 os dois",
     price: "R$ 25 os dois.",
     image: "/marioluigi.jpeg",
+    tag: "disponível"
   }
 ];
 
