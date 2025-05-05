@@ -277,9 +277,14 @@ export default function App() {
   );
 
   return (
-    <div style={{ backgroundColor: darkMode ? '#222' : '#b5d67d', color: darkMode ? '#fff' : '#000', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
+    <div style={{ backgroundColor: darkMode ? '#1d1d1d' : '#a3b18a', color: darkMode ? '#fff' : '#000', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#2d4e1d', textAlign: 'center', fontFamily: 'Arial Black, sans-serif', flex: 1 }}>Bazar Virtual de Ryan e Alef</h1>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '1.5rem' }}>
+  <img src="/logo-mala-final.png" alt="Logo Thrift" style={{ width: '120px', marginBottom: '1rem' }} />
+  <h1 style={{ fontSize: '2rem', fontWeight: '900', color: '#2d4e1d', textAlign: 'center', fontFamily: 'Arial Black, sans-serif' }}>
+    Bazar Virtual - Ryan e Alef
+  </h1>
+</div>
         <button
           onClick={() => setDarkMode(!darkMode)}
           style={{ marginLeft: '1rem', padding: '0.5rem 1rem', borderRadius: '12px', border: 'none', backgroundColor: '#7cbb00', color: '#fff', cursor: 'pointer' }}
@@ -298,7 +303,7 @@ export default function App() {
 
       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
         {filteredItems.map((item) => (
-          <div key={item.id} style={{ backgroundColor: darkMode ? '#333' : 'white', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
+          <div key={item.id} style={{ backgroundColor: darkMode ? '#2a2a2a' : '#fefae0', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
             <div style={{ position: 'relative', overflow: 'hidden' }}>
               <img
                 src={item.image}
@@ -319,7 +324,7 @@ export default function App() {
               )}
             </div>
             <div style={{ padding: '1rem' }}>
-              <h2 style={{ fontSize: '1.25rem', color: '#4e6b1a', fontWeight: '600' }}>{item.name}</h2>
+              <h2 style={{ fontSize: '1.25rem', color: '#5a5a00', fontWeight: '600' }}>{item.name}</h2>
               <p style={{ fontSize: '0.875rem', color: '#666', margin: '0.5rem 0' }}>{item.description}</p>
               <p style={{ fontWeight: 'bold', fontSize: '1.125rem', color: '#4e6b1a' }}>{item.price}</p>
               {!item.sold ? (
@@ -343,6 +348,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
