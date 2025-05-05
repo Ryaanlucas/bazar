@@ -6,7 +6,7 @@ const items = [
     name: "Carregador 33w Turbo tipo C",
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 65",
     price: "R$ 30",
-    image: "/carregador.jpeg",
+    image: "/carregador2.jpeg",
     tag: "disponível"
   },
   {
@@ -38,7 +38,7 @@ const items = [
     name: "Ventilador Pequeno",
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 40",
-    image: "/ventilador.jpeg",
+    image: "/ventilador2.jpeg",
     tag: "disponível"
   },
   {
@@ -286,6 +286,13 @@ const items = [
     description: "Sem defeitos, Tipo de venda: imediata. Valor original: R$ 80",
     price: "R$ 50",
     image: "/potes.jpeg",
+  },
+  {
+    id: 38,
+    name: "chapéu mario e luigi",
+    description: "usado / Tipo de venda: imediata. Valor original: R$ 50 os dois",
+    price: "R$ 25 os dois.",
+    image: "/marioluigi.jpeg",
   }
 ];
 
