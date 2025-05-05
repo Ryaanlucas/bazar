@@ -69,7 +69,7 @@ const items = [
     name: "Televisão semp roku 50p",
     description: "usado / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
     price: "R$ 1700",
-    image: "/placeholder.jpeg"
+    image: "/tv50.jpeg"
   },
   {
     id: 11,
@@ -83,7 +83,7 @@ const items = [
     name: "Escudo Capitão América ( metal )",
     description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 380",
     price: "R$ 150",
-    image: "/escudo.jpeg"
+    image: "/escudo_frente.jpeg"
   },
   {
     id: 13,
@@ -202,7 +202,7 @@ const items = [
     name: "Zamiocuca 9 meses",
     description: "Tipo de venda: imediata",
     price: "R$ 30",
-    image: "/zammiocuca.jpeg"
+    image: "/zamiocuca.jpeg"
   },
   {
     id: 30,
@@ -216,7 +216,7 @@ const items = [
     name: "cafeteira star wars",
     description: "Usado / 2 anos. Tipo de venda: imediata",
     price: "R$ 50",
-    image: "/cafeteria.jpeg"
+    image: "/cafeteria_starwars.jpeg"
   },
   {
     id: 32,
