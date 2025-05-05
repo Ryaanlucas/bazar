@@ -6,7 +6,7 @@ const items = [
     name: "Carregador 33w Turbo tipo C",
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 65",
     price: "R$ 30",
-    image: "/placeholder.jpeg",
+    image: "/carregador.jpeg",
     tag: "disponível"
   },
   {
@@ -14,7 +14,8 @@ const items = [
     name: "Powerbank por indução 5000mAh",
     description: "usado / 1 mês. Tipo de venda: imediata. Valor original: R$ 90",
     price: "R$ 40",
-    image: "/placeholder.jpeg"
+    image: "/power.jpeg",
+    tag: "disponível"
   },
   {
     id: 3,
@@ -29,196 +30,234 @@ const items = [
     name: "Umidificador",
     description: "usado / 6 meses. Tipo de venda: imediata. Valor original: R$ 60",
     price: "R$ 25",
-    image: "/umidificador.jpeg"
+    image: "/umidificador.jpeg",
+    tag: "disponível"
   },
   {
     id: 5,
     name: "Ventilador Pequeno",
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 40",
-    image: "/ventilador.jpeg"
+    image: "/ventilador.jpeg",
+    tag: "disponível"
   },
   {
     id: 6,
     name: "Airfry Elgin 4L",
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 250",
     price: "R$ 150",
-    image: "/airfry.jpeg"
+    image: "/airfry.jpeg",
+    tag: "disponível"
   },
   {
     id: 7,
     name: "Aspirador inteligente",
     description: "pouco usado. Tipo de venda: imediata. Valor original: R$ 50",
     price: "R$ 30",
-    image: "/aspirador.jpeg"
+    image: "/aspirador.jpeg",
+    tag: "disponível"
   },
   {
     id: 8,
     name: "Geladeira Eletrolux 362 litros",
     description: "usado / 5 anos. Tipo de venda: final de maio. Valor original: R$ 1700",
     price: "R$ 500",
-    image: "/geladeira.jpeg"
+    image: "/geladeira.jpeg",
+    tag: "disponível"
   },
   {
     id: 9,
     name: "Fogão Atlas 4 bocas ( sem avarias )",
     description: "usado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1200",
     price: "R$ 700",
-    image: "/placeholder.jpeg"
+    image: "/placeholder.jpeg",
+    tag: "disponível"
   },
   {
     id: 10,
     name: "Televisão semp roku 50p",
     description: "usado / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
     price: "R$ 1700",
-    image: "/tv50.jpeg"
+    image: "/tv50.jpeg",
+    tag: "indisponível",
+    sold: true
   },
   {
     id: 11,
     name: "Sofá Beje ( laterais inclinadas )",
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 300",
     price: "R$ 150",
-    image: "/sofa.jpeg"
+    image: "/sofa.jpeg",
+    tag: "disponível"
   },
   {
     id: 12,
     name: "Escudo Capitão América ( metal )",
     description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 380",
     price: "R$ 150",
-    image: "/escudo_frente.jpeg"
+    image: "/escudo_frente.jpeg",
+    tag: "disponível"
   },
   {
     id: 13,
     name: "Colchão Inflável Solteiro Multiuso Até 100Kgs",
     description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 135",
     price: "R$ 60",
-    image: "/cama_inflavel.jpeg"
+    image: "/colchao.jpeg",
+    tag: "disponível"
   },
   {
     id: 14,
     name: "Patins Inline Traxart 41",
     description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 900",
     price: "R$ 350",
-    image: "/placeholder.jpeg"
+    image: "/placeholder.jpeg",
+    tag: "disponível"
   },
   {
     id: 15,
     name: "Abajur luz amarela ( c/ avarias )",
     description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 90",
     price: "R$ 40",
-    image: "/abajur.jpeg"
+    image: "/abajur.jpeg",
+    tag: "disponível"
   },
   {
     id: 16,
     name: "Ferro de passar ( bom estado )",
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 50",
-    image: "/placeholder.jpeg"
+    image: "/ferro.jpeg",
+    tag: "disponível"
   },
   {
     id: 17,
     name: "Varal de chão Aço",
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 50",
-    image: "/placeholder.jpeg"
+    image: "/varal.jpeg",
+    tag: "disponível"
   },
   {
     id: 18,
     name: "Poltrona Chaise Sintética Média",
     description: "novo / 4 meses. Tipo de venda: Imediata. Valor original: R$ 1200",
     price: "R$ 900",
-    image: "/poltrona.jpeg"
+    image: "/poltrona.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 19,
+    name: "Cadeira escritório azul/preto",
+    description: "usado / 3 anos / com avaria. Tipo de venda: Imediata. Valor original: R$ 650",
+    price: "R$ 300",
+    image: "/cadeira_escrit.jpeg",
+    tag: "inddisponível",
+    sold: true
   },
   {
     id: 20,
     name: "Caixa de Transporte Felino",
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 60",
-    image: "/caixa_felino.jpeg"
+    image: "/caixa_felino.jpeg",
+    tag: "disponível"
   },
   {
     id: 21,
     name: "Alexa echo Dot 3° geração",
     description: "novo / sem avarias. Tipo de venda: final de maio. Valor original: R$ 650",
     price: "R$ 350",
-    image: "/alexa.jpeg"
+    image: "/alexa.jpeg",
+    tag: "disponível"
   },
   {
     id: 22,
     name: "Heartstopper Volumes 1, 2 e 3",
     description: "usado / sem avarias. Tipo de venda: imediata. Valor original: R$ 120",
     price: "R$ 50",
-    image: "/placeholder.jpeg"
+    image: "/heart.jpeg",
+    tag: "disponível"
   },
   {
     id: 23,
     name: "Monitor Dell",
     description: "usado / 1 ano. Tipo de venda: final de maio. Valor original: R$ 1400",
     price: "R$ 800",
-    image: "/placeholder.jpeg"
+    image: "/monitor.jpeg",
+    tag: "disponível"
   },
   {
     id: 25,
     name: "Rosa do deserto / 1 ano",
     description: "Tipo de venda: imediata.",
     price: "R$ 30",
-    image: "/rosa_deserto.jpeg"
+    image: "/rosa_deserto.jpeg",
+    tag: "disponível"
   },
   {
     id: 26,
     name: "Alocácia Grande 7 meses",
     description: "Tipo de venda: imediata",
     price: "R$ 30",
-    image: "/orquidea_grande.jpeg"
+    image: "/orquidea_grande.jpeg",
+    tag: "disponível"
   },
   {
     id: 27,
     name: "Alocácia pequena 3 meses",
     description: "Tipo de venda: imediata",
     price: "R$ 20",
-    image: "/orquidea.jpeg"
+    image: "/orquidea.jpeg",
+    tag: "disponível"
   },
   {
     id: 28,
     name: "Sapatos DARMAND Marrom seminovo",
     description: "Usado poucas vezes / tamano 41/41. Tipo de venda: imediata",
     price: "R$ 80",
-    image: "/sapato_darmand.jpeg"
+    image: "/sapato_darmand.jpeg",
+    tag: "disponível"
   },
   {
     id: 29,
     name: "Zamiocuca 9 meses",
     description: "Tipo de venda: imediata",
     price: "R$ 30",
-    image: "/zamiocuca.jpeg"
+    image: "/zamiocuca.jpeg",
+    tag: "disponível"
   },
   {
     id: 30,
     name: "jibóia 1 ano e meio",
     description: "Tipo de venda: imediata",
     price: "R$ 30",
-    image: "/jiboia.jpeg"
+    image: "/jiboia.jpeg",
+    tag: "disponível"
   },
   {
     id: 31,
     name: "cafeteira star wars",
     description: "Usado / 2 anos. Tipo de venda: imediata",
     price: "R$ 50",
-    image: "/cafeteira_starwars.jpeg"
+    image: "/cafeteira_starwars.jpeg",
+    tag: "disponível"
   },
   {
     id: 32,
     name: "Balança Corporal 180kg Daaz",
     description: "Novo / sem avarias. Tipo de venda: imediata",
     price: "R$ 60",
-    image: "/balanca_dazz.jpeg"
+    image: "/balanca_dazz.jpeg",
+    tag: "disponível"
   },
   {
     id: 33,
     name: "Espada de São Jorge Grande",
     description: "Tipo de venda: imediata",
     price: "R$ 40",
-    image: "/espada_sao_jorge_grande.jpeg"
+    image: "/espada_sao_jorge_grande.jpeg",
+    tag: "disponível"
   },
   {
     id: 34,
@@ -226,7 +265,6 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 25",
     image: "/espada_sao_jorge_pequena.jpeg",
-    sold: true
   }
 ];
 
