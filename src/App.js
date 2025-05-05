@@ -7,7 +7,7 @@ const items = [
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 65",
     price: "R$ 30",
     image: "/placeholder.jpeg",
-    tag: "urgente"
+    tag: "disponível"
   },
   {
     id: 2,
