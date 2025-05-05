@@ -278,7 +278,7 @@ const items = [
     name: "Teclado POSITIVO",
     description: "Sem defeitos / 2 anos. Tipo de venda: imediata. Valor original: R$ 120",
     price: "R$ 45",
-    image: "/espada_sao_jorge_pequena.jpeg",
+    image: "/teclado.jpeg",
   }
 ];
 
