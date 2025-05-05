@@ -315,7 +315,9 @@ export default function App() {
       />
 
       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
-        {filteredItems.map((item) => (
+  {filteredItems
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((item) => (
           <div key={item.id} style={{ backgroundColor: darkMode ? '#2a2a2a' : '#fefae0', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
             <div style={{ position: 'relative', overflow: 'hidden' }}>
               <img
