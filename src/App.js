@@ -296,14 +296,20 @@ export default function App() {
               <h2 style={{ fontSize: '1.25rem', color: '#4e6b1a', fontWeight: '600' }}>{item.name}</h2>
               <p style={{ fontSize: '0.875rem', color: '#666', margin: '0.5rem 0' }}>{item.description}</p>
               <p style={{ fontWeight: 'bold', fontSize: '1.125rem', color: '#4e6b1a' }}>{item.price}</p>
-              <a
-                href="https://wa.me/5592993770892"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#7cbb00', color: 'white', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', textDecoration: 'none', fontSize: '1rem' }}
-              >
-                Falar no WhatsApp
-              </a>
+              {!item.sold ? (
+                <a
+                  href="https://wa.me/5592993770892"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#7cbb00', color: 'white', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', textDecoration: 'none', fontSize: '1rem' }}
+                >
+                  Falar no WhatsApp
+                </a>
+              ) : (
+                <div style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#ccc', color: '#444', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', fontSize: '1rem', fontWeight: 'bold' }}>
+                  Vendido
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -311,3 +317,4 @@ export default function App() {
     </div>
   );
 }
+
