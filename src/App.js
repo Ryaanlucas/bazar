@@ -238,7 +238,7 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 25",
     image: "/espada_sao_jorge_pequena.jpeg"
-  },
+  }
 ];
 
 export default function App() {
