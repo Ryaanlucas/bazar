@@ -290,10 +290,10 @@ export default function App() {
     }}
   />
   <h1 style={{
-    fontSize: '3rem',
-    fontWeight: '950',
+    fontSize: '2.5rem',
+    fontWeight: '900',
     color: '#2d4e1d',
-    fontFamily: 'Garamond, sans-serif'
+    fontFamily: 'Garamond'
   }}>
     Bazar Virtual - Ryan e Alef
   </h1>
