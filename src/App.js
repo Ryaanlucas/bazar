@@ -290,7 +290,7 @@ export default function App() {
     }}
   />
   <h1 style={{
-    fontSize: '2rem',
+    fontSize: '3rem',
     fontWeight: '950',
     color: '#2d4e1d',
     fontFamily: 'Garamond, sans-serif'
