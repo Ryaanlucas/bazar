@@ -88,10 +88,10 @@ const items = [
   },
   {
     id: 13,
-    name: "Cama inflável Solteiro",
+    name: "Colchão Inflável Solteiro Multiuso Até 100Kgs",
     description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 135",
     price: "R$ 60",
-    image: "/placeholder.jpeg"
+    image: "/cama_inflavel.jpeg"
   },
   {
     id: 14,
@@ -129,13 +129,6 @@ const items = [
     image: "/poltrona.jpeg"
   },
   {
-    id: 19,
-    name: "Cômoda de Madeira 5 gavetas",
-    description: "usado / sem avaria. Tipo de venda: final de maio. Valor original: R$ 250",
-    price: "R$ 100",
-    image: "/placeholder.jpeg"
-  },
-  {
     id: 20,
     name: "Caixa de Transporte Felino",
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100",
@@ -164,13 +157,6 @@ const items = [
     image: "/placeholder.jpeg"
   },
   {
-    id: 24,
-    name: "Cadeira Escritório preta/azul",
-    description: "com avarias. Tipo de venda: imediata. Valor original: R$ 750",
-    price: "R$ 300",
-    image: "/cadeira_escrit.jpeg"
-  },
-  {
     id: 25,
     name: "Rosa do deserto / 1 ano",
     description: "Tipo de venda: imediata.",
@@ -179,14 +165,14 @@ const items = [
   },
   {
     id: 26,
-    name: "Orquídea Grande 6 meses",
+    name: "Alocácia Grande 7 meses",
     description: "Tipo de venda: imediata",
-    price: "R$ 50",
+    price: "R$ 30",
     image: "/orquidea_grande.jpeg"
   },
   {
     id: 27,
-    name: "Orquídea pequena 3 meses",
+    name: "Alocácia pequena 3 meses",
     description: "Tipo de venda: imediata",
     price: "R$ 20",
     image: "/orquidea.jpeg"
@@ -209,7 +195,7 @@ const items = [
     id: 30,
     name: "jibóia 1 ano e meio",
     description: "Tipo de venda: imediata",
-    price: "R$ 40",
+    price: "R$ 30",
     image: "/jiboia.jpeg"
   },
   {
@@ -230,7 +216,7 @@ const items = [
     id: 33,
     name: "Espada de São Jorge Grande",
     description: "Tipo de venda: imediata",
-    price: "R$ 50",
+    price: "R$ 40",
     image: "/espada_sao_jorge_grande.jpeg"
   },
   {
