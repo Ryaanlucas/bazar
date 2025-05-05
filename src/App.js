@@ -82,7 +82,7 @@ const items = [
     id: 12,
     name: "Escudo Capitão América ( metal )",
     description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 380",
-    price: "R$ 150"
+    price: "R$ 150",
     image: "/escudo.jpeg"
   },
   {
