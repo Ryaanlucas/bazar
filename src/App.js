@@ -367,7 +367,7 @@ const items = [
     price: "R$ 10",
     image: "/arte.jpeg",
     tag: "indisponível",
-    solt:true
+    sold:true
   },
   {
     id: 46,
