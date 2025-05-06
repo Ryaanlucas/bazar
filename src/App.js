@@ -39,7 +39,8 @@ const items = [
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 40",
     image: "/ventilador2.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 6,
@@ -47,7 +48,8 @@ const items = [
     description: "usado / 1 ano e meio. Tipo de venda: imediata. Valor original: R$ 250",
     price: "R$ 120",
     image: "/airfry.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold: true
   },
   {
     id: 7,
@@ -55,7 +57,8 @@ const items = [
     description: "pouco usado. Tipo de venda: imediata. Valor original: R$ 50",
     price: "R$ 30",
     image: "/aspirador.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold: true
   },
   {
     id: 8,
@@ -63,7 +66,8 @@ const items = [
     description: "usado / 5 anos. Tipo de venda: final de maio. Valor original: R$ 1700",
     price: "R$ 500",
     image: "/geladeira.jpeg",
-    tag: "disponível"
+    tag: "disponível",
+    sold: true
   },
   {
     id: 9,
@@ -136,7 +140,8 @@ const items = [
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 50",
     image: "/varal.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold: true
   },
   {
     id: 18,
@@ -201,7 +206,7 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 30",
     image: "/orquidea_grande.jpeg",
-    tag: "disponível"
+    tag: "disponível",
   },
   {
     id: 27,
@@ -209,7 +214,8 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 20",
     image: "/orquidea.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 28,
@@ -241,7 +247,7 @@ const items = [
     description: "Usado / 2 anos. Tipo de venda: imediata",
     price: "R$ 50",
     image: "/cafeteira_starwars.jpeg",
-    tag: "disponível",
+    tag: "indisponível",
     sold:true
   },
   {
@@ -258,7 +264,8 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 40",
     image: "/espada_sao_jorge_grande.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 34,
@@ -266,7 +273,8 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 25",
     image: "/espada_sao_jorge_pequena.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold: true
   },
   {
     id: 35,
@@ -274,7 +282,8 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 15",
     image: "/pesos.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 36,
