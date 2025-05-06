@@ -370,7 +370,7 @@ const items = [
     solt:true
   },
   {
-    id: 45,
+    id: 46,
     name: "Livro Paixão / um romance da série FALLEN",
     description: "Seminovo. Tipo de venda: imediata.",
     price: "R$ 20",
@@ -378,7 +378,7 @@ const items = [
     tag: "disponível"
   },
   {
-    id: 46,
+    id: 47,
     name: "Livro CORALINE",
     description: "Marcas de uso. Tipo de venda: imediata.",
     price: "R$ 15",
@@ -386,7 +386,7 @@ const items = [
     tag: "disponível"
   },
   {
-    id: 47,
+    id: 48,
     name: "Planta Comigo ninguém pode",
     description: "Tipo de venda: imediata.",
     price: "R$ 35",
@@ -394,7 +394,7 @@ const items = [
     tag: "disponível"
   },
   {
-    id: 48,
+    id: 49,
     name: "Livro O homem do castelo alto",
     description: "Marcas de uso. Tipo de venda: imediata.",
     price: "R$ 10",
@@ -402,7 +402,7 @@ const items = [
     tag: "disponível"
   },
   {
-    id: 49,
+    id: 50,
     name: "Cortina Blackout Cinza 1m90",
     description: "Blackout com avarias, parte do tecido sem avarias. Tipo de venda: imediata.",
     price: "R$ 40",
@@ -410,14 +410,29 @@ const items = [
     tag: "disponível"
   },
   {
-    id: 50,
+    id: 51,
     name: "Manhwa On or Off: Volume 02 e 03 (Full Color)",
     description: "Novos. Tipo de venda: imediata.",
     price: "R$ 35 cada ou os 2 por 60",
     image: "/onoroff.jpeg",
     tag: "disponível"
+  },
+  {
+    id: 51,
+    name: "Jogo de 5 copos de vidro (1 quebrou)",
+    description: "Novos/ nunca usados. Tipo de venda: imediata.",
+    price: "R$ 20",
+    image: "/onoroff.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 52,
+    name: "2 Travessas de vidro",
+    description: "Tamanho médio. Tipo de venda: imediata.",
+    price: "R$ 20 cada um, 30 as duas",
+    image: "/travessa.jpeg",
+    tag: "disponível"
   }
-
 ];
 
 export default function App() {
