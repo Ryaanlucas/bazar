@@ -366,7 +366,7 @@ const items = [
     description: "Seminovo. Tipo de venda: imediata.",
     price: "R$ 10",
     image: "/arte.jpeg",
-    tag: "inddisponível",
+    tag: "indisponível",
     solt:true
   },
   {
@@ -375,6 +375,46 @@ const items = [
     description: "Seminovo. Tipo de venda: imediata.",
     price: "R$ 20",
     image: "/paixao.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 46,
+    name: "Livro CORALINE",
+    description: "Marcas de uso. Tipo de venda: imediata.",
+    price: "R$ 15",
+    image: "/coraline.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 47,
+    name: "Planta Comigo ninguém pode",
+    description: "Tipo de venda: imediata.",
+    price: "R$ 35",
+    image: "/comigo.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 48,
+    name: "Livro O homem do castelo alto",
+    description: "Marcas de uso. Tipo de venda: imediata.",
+    price: "R$ 10",
+    image: "/casteloalto.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 49,
+    name: "Cortina Blackout Cinza 1m90",
+    description: "Blackout com avarias, parte do tecido sem avarias. Tipo de venda: imediata.",
+    price: "R$ 40",
+    image: "/cortina.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 50,
+    name: "Manhwa On or Off: Volume 02 e 03 (Full Color)",
+    description: "Novos. Tipo de venda: imediata.",
+    price: "R$ 35 cada ou os 2 por 60",
+    image: "/onoroff.jpeg",
     tag: "disponível"
   }
 
