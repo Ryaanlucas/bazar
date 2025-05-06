@@ -7,13 +7,14 @@ const items = [
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 65",
     price: "R$ 30",
     image: "/carregador2.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold: true
   },
   {
     id: 2,
-    name: "Powerbank por indução 5000mAh",
+    name: "Powerbank por indução 5000mAh Iphone",
     description: "usado / 1 mês. Tipo de venda: imediata. Valor original: R$ 90",
-    price: "R$ 40",
+    price: "R$ 30",
     image: "/power.jpeg",
     tag: "disponível"
   },
@@ -90,7 +91,7 @@ const items = [
     id: 11,
     name: "Sofá Beje ( laterais inclinadas )",
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 300",
-    price: "R$ 150",
+    price: "R$ 100",
     image: "/sofa.jpeg",
     tag: "disponível"
   },
@@ -220,14 +221,14 @@ const items = [
   {
     id: 28,
     name: "Sapatos DARMAND Marrom seminovo",
-    description: "Usado poucas vezes / tamano 41/41. Tipo de venda: imediata. Valor original: R$ 250",
+    description: "Usado poucas vezes / tamano 41/42. Tipo de venda: imediata. Valor original: R$ 250",
     price: "R$ 90",
     image: "/sapato_darmand.jpeg",
     tag: "disponível"
   },
   {
     id: 29,
-    name: "Zamiocuca 9 meses",
+    name: "Zamiocuca / 9 meses",
     description: "Tipo de venda: imediata",
     price: "R$ 30",
     image: "/zamiocuca.jpeg",
@@ -235,7 +236,7 @@ const items = [
   },
   {
     id: 30,
-    name: "jibóia 1 ano e meio",
+    name: "jibóia / 1 ano e meio",
     description: "Tipo de venda: imediata",
     price: "R$ 30",
     image: "/jiboia.jpeg",
@@ -243,7 +244,7 @@ const items = [
   },
   {
     id: 31,
-    name: "cafeteira star wars",
+    name: "cafeteira star wars / Mallory",
     description: "Usado / 2 anos. Tipo de venda: imediata",
     price: "R$ 50",
     image: "/cafeteira_starwars.jpeg",
@@ -287,7 +288,7 @@ const items = [
   },
   {
     id: 36,
-    name: "Teclado POSITIVO",
+    name: "Teclado HYPER",
     description: "Sem defeitos / 2 anos. Tipo de venda: imediata. Valor original: R$ 120",
     price: "R$ 45",
     image: "/teclado.jpeg",
@@ -307,6 +308,14 @@ const items = [
     description: "usado / Tipo de venda: imediata. Valor original: R$ 50 os dois",
     price: "R$ 25 os dois.",
     image: "/marioluigi.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 36,
+    name: "Teclado POSITIVO",
+    description: "Sem defeitos / com avarias na parte de baixo. Tipo de venda: imediata. Valor original: R$ 70",
+    price: "R$ 20",
+    image: "/teclado1.jpeg",
     tag: "disponível"
   }
 ];
@@ -381,7 +390,7 @@ export default function App() {
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((item) => (
           <div key={item.id} style={{ backgroundColor: darkMode ? '#2a2a2a' : '#fefae0', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
-            <div style={{ position: 'relative', overflow: 'hidden' }}>
+            <div style={{ position: 'relative', overflow: 'hidden' }}> 
               <img
                 src={item.image}
                 alt={item.name}
