@@ -66,7 +66,7 @@ const items = [
     description: "usado / 5 anos. Tipo de venda: final de maio. Valor original: R$ 1700",
     price: "R$ 500",
     image: "/geladeira.jpeg",
-    tag: "disponível",
+    tag: "indisponível",
     sold: true
   },
   {
