@@ -311,7 +311,7 @@ const items = [
     tag: "disponível"
   },
   {
-    id: 36,
+    id: 39,
     name: "Teclado POSITIVO",
     description: "Sem defeitos / com avarias na parte de baixo. Tipo de venda: imediata. Valor original: R$ 70",
     price: "R$ 20",
@@ -324,51 +324,45 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [darkMode, setDarkMode] = useState(false);
 
-  const filteredItems = items.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredItems = items
+    .filter((item) => item.name.toLowerCase().includes(search.toLowerCase()))
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <div style={{ backgroundColor: darkMode ? '#1d1d1d' : '#a3b18a', color: darkMode ? '#fff' : '#000', minHeight: '100vh', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
+    <div
+      style={{
+        backgroundColor: darkMode ? '#1d1d1d' : '#a3b18a',
+        color: darkMode ? '#fff' : '#000',
+        minHeight: '100vh',
+        padding: '2rem',
+        maxWidth: '1200px',
+        margin: '0 auto'
+      }}
+    >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-  <img src="/logo_mala.png"
-    alt="Logo Thrift"
-    style={{
-      maxWidth: '150px',
-      width: '100%',
-      marginBottom: '1rem',
-      filter: darkMode ? 'brightness(0.9)' : 'none'
-    }}
-  />
-  <h1 style={{
-    fontSize: '2.5rem',
-    fontWeight: '900',
-    color: '#2d4e1d',
-    fontFamily: 'Garamond'
-  }}>
-    Bazar Virtual - Ryan e Alef
-  </h1>
-      <div style={{
-  backgroundColor: darkMode ? 'rgba(255, 255, 255, 0.05)' : 'rgba(255, 255, 255, 0.7)',
-  border: '1px solid #ccc',
-  borderRadius: '12px',
-  padding: '1rem 1.5rem',
-  marginTop: '1rem',
-  maxWidth: '800px',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  fontFamily: 'Arial, sans-serif',
-  color: darkMode ? '#eee' : '#2d4e1d',
-  fontSize: '1rem',
-  lineHeight: '1.6'
-}}>
-  👋 Oi! Seja bem-vindo ao nosso <strong>bazar virtual</strong>. <br />
-  Estamos disponibilizando alguns itens novos,seminovos e usados para venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
-  Entre em contato conosco se desejar mais detalhes dos produtos e agendamento da retirada. <br /><br />
-  🌿 Sinta-se à vontade 😁
-</div>
-</div>
+          <img src="/logo_mala.png" alt="Logo Thrift" style={{ maxWidth: '150px', width: '100%', marginBottom: '1rem', filter: darkMode ? 'brightness(0.9)' : 'none' }} />
+          <h1 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#2d4e1d', fontFamily: 'Garamond' }}>Bazar Virtual - Ryan e Alef</h1>
+          <div style={{
+            backgroundColor: darkMode ? 'rgba(255, 255, 255, 0.05)' : 'rgba(255, 255, 255, 0.7)',
+            border: '1px solid #ccc',
+            borderRadius: '12px',
+            padding: '1rem 1.5rem',
+            marginTop: '1rem',
+            maxWidth: '800px',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            fontFamily: 'Arial, sans-serif',
+            color: darkMode ? '#eee' : '#2d4e1d',
+            fontSize: '1rem',
+            lineHeight: '1.6'
+          }}>
+            👋 Oi! Seja bem-vindo ao nosso <strong>bazar virtual</strong>. <br />
+            Estamos disponibilizando alguns itens novos, seminovos e usados para venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
+            Entre em contato conosco se desejar mais detalhes dos produtos e agendamento da retirada. <br /><br />
+            🌿 Sinta-se à vontade 😁
+          </div>
+        </div>
         <button
           onClick={() => setDarkMode(!darkMode)}
           style={{ marginLeft: '1rem', padding: '0.5rem 1rem', borderRadius: '12px', border: 'none', backgroundColor: '#7cbb00', color: '#fff', cursor: 'pointer' }}
@@ -386,11 +380,9 @@ export default function App() {
       />
 
       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
-  {filteredItems
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map((item) => (
+        {filteredItems.map((item) => (
           <div key={item.id} style={{ backgroundColor: darkMode ? '#2a2a2a' : '#fefae0', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
-            <div style={{ position: 'relative', overflow: 'hidden' }}> 
+            <div style={{ position: 'relative', overflow: 'hidden' }}>
               <img
                 src={item.image}
                 alt={item.name}
@@ -399,12 +391,23 @@ export default function App() {
                   height: '350px',
                   objectFit: 'cover',
                   transition: 'transform 0.3s ease-in-out',
-                  cursor: 'zoom-in'
+                  cursor: 'zoom-in',
+                  opacity: item.sold ? 0.6 : 1
                 }}
-                onClick={() => window.open(item.image, '_blank')}
+                onClick={() => !item.sold && window.open(item.image, '_blank')}
               />
               {item.tag && (
-                <div style={{ position: 'absolute', top: '10px', left: '10px', backgroundColor: '#ff6347', color: '#fff', padding: '0.25rem 0.5rem', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 'bold' }}>
+                <div style={{
+                  position: 'absolute',
+                  top: '10px',
+                  left: '10px',
+                  backgroundColor: item.tag.toLowerCase() === 'disponível' ? '#7cbb00' : '#ff6347',
+                  color: '#fff',
+                  padding: '0.25rem 0.5rem',
+                  borderRadius: '8px',
+                  fontSize: '0.75rem',
+                  fontWeight: 'bold'
+                }}>
                   {item.tag.toUpperCase()}
                 </div>
               )}
