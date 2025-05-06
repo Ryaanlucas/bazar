@@ -289,9 +289,9 @@ const items = [
   },
   {
     id: 36,
-    name: "Teclado HYPER",
-    description: "Sem defeitos / 2 anos. Tipo de venda: imediata. Valor original: R$ 120",
-    price: "R$ 45",
+    name: "Teclado HYPER semimecânico",
+    description: "Sem defeitos / 2 anos. Tipo de venda: imediata. Valor original: R$ 200",
+    price: "R$ 100",
     image: "/teclado.jpeg",
     tag: "disponível"
   },
