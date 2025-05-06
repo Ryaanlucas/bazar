@@ -407,7 +407,8 @@ const items = [
     description: "Blackout com avarias, parte do tecido sem avarias. Tipo de venda: imediata.",
     price: "R$ 40",
     image: "/cortina.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 51,
