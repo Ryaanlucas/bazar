@@ -412,8 +412,6 @@ export default function App() {
           {darkMode ? "☀️ Claro" : "🌙 Escuro"}
         </button>
       </div>
-      </div>
-
       <input
         type="text"
         placeholder="Buscar produto..."
