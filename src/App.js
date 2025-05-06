@@ -423,7 +423,7 @@ const items = [
     name: "Jogo de 5 copos de vidro (1 quebrou)",
     description: "Novos/ nunca usados. Tipo de venda: imediata.",
     price: "R$ 20",
-    image: "/onoroff.jpeg",
+    image: "/copos.jpeg",
     tag: "disponível"
   },
   {
