@@ -315,7 +315,7 @@ const items = [
     name: "Teclado POSITIVO",
     description: "Sem defeitos / com avarias na parte de baixo. Tipo de venda: imediata. Valor original: R$ 70",
     price: "R$ 20",
-    image: "/teclado1.jpeg",
+    image: "/teclado2.jpeg",
     tag: "disponível"
   },
   {
@@ -340,6 +340,38 @@ const items = [
     description: "Usado. Tipo de venda: imediata.",
     price: "R$ 20",
     image: "/callme.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 43,
+    name: "Livros saga Crepúsculo/Eclipse/Lua Nova",
+    description: "Usado. Tipo de venda: imediata.",
+    price: "R$ 40",
+    image: "/crepusculo.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 44,
+    name: "Livro A forma da água",
+    description: "Seminovo. Tipo de venda: imediata.",
+    price: "R$ 20",
+    image: "/formadagua.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 45,
+    name: "Livro A Arte da Sabedoria",
+    description: "Seminovo. Tipo de venda: imediata.",
+    price: "R$ 10",
+    image: "/arte.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 45,
+    name: "Livro Paixão / um romance da série FALLEN",
+    description: "Seminovo. Tipo de venda: imediata.",
+    price: "R$ 20",
+    image: "/paixao.jpeg",
     tag: "disponível"
   }
 
