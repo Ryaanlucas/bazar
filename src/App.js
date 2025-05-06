@@ -324,51 +324,94 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [darkMode, setDarkMode] = useState(false);
 
-  const filteredItems = items
-    .filter((item) => item.name.toLowerCase().includes(search.toLowerCase()))
-    .sort((a, b) => a.name.localeCompare(b.name));
+  const filteredItems = items.filter((item) =>
+    item.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div
       style={{
-        backgroundColor: darkMode ? '#1d1d1d' : '#a3b18a',
-        color: darkMode ? '#fff' : '#000',
-        minHeight: '100vh',
-        padding: '2rem',
-        maxWidth: '1200px',
-        margin: '0 auto'
+        backgroundColor: darkMode ? "#1d1d1d" : "#a3b18a",
+        color: darkMode ? "#fff" : "#000",
+        minHeight: "100vh",
+        padding: "2rem",
+        maxWidth: "1200px",
+        margin: "0 auto",
+        textAlign: "center",
       }}
     >
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <img src="/logo_mala.png" alt="Logo Thrift" style={{ maxWidth: '150px', width: '100%', marginBottom: '1rem', filter: darkMode ? 'brightness(0.9)' : 'none' }} />
-          <h1 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#2d4e1d', fontFamily: 'Garamond' }}>Bazar Virtual - Ryan e Alef</h1>
-          <div style={{
-            backgroundColor: darkMode ? 'rgba(255, 255, 255, 0.05)' : 'rgba(255, 255, 255, 0.7)',
-            border: '1px solid #ccc',
-            borderRadius: '12px',
-            padding: '1rem 1.5rem',
-            marginTop: '1rem',
-            maxWidth: '800px',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            fontFamily: 'Arial, sans-serif',
-            color: darkMode ? '#eee' : '#2d4e1d',
-            fontSize: '1rem',
-            lineHeight: '1.6'
-          }}>
-            👋 Oi! Seja bem-vindo ao nosso <strong>bazar virtual</strong>. <br />
-            Estamos disponibilizando alguns itens novos, seminovos e usados para venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
-            Entre em contato conosco se desejar mais detalhes dos produtos e agendamento da retirada. <br /><br />
-            🌿 Sinta-se à vontade 😁
-          </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          marginBottom: "1rem",
+          position: "relative",
+        }}
+      >
+        <img
+          src="/logo_mala.png"
+          alt="Logo Thrift"
+          style={{
+            maxWidth: "150px",
+            width: "100%",
+            marginBottom: "1rem",
+            filter: darkMode ? "brightness(0.9)" : "none",
+          }}
+        />
+        <h1
+          style={{
+            fontSize: "2.5rem",
+            fontWeight: "900",
+            color: "#2d4e1d",
+            fontFamily: "Garamond",
+          }}
+        >
+          Bazar Virtual - Ryan e Alef
+        </h1>
+        <div
+          style={{
+            backgroundColor: darkMode
+              ? "rgba(255, 255, 255, 0.05)"
+              : "rgba(255, 255, 255, 0.7)",
+            border: "1px solid #ccc",
+            borderRadius: "12px",
+            padding: "1rem 1.5rem",
+            marginTop: "1rem",
+            maxWidth: "800px",
+            marginLeft: "auto",
+            marginRight: "auto",
+            fontFamily: "Arial, sans-serif",
+            color: darkMode ? "#eee" : "#2d4e1d",
+            fontSize: "1rem",
+            lineHeight: "1.6",
+          }}
+        >
+          👋 Oi! Seja bem-vindo ao nosso <strong>bazar virtual</strong>. <br />
+          Estamos disponibilizando alguns itens novos, seminovos e usados para
+          venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
+          Entre em contato conosco se desejar mais detalhes dos produtos e
+          agendamento da retirada. <br />
+          <br />🌿 Sinta-se à vontade 😁
         </div>
         <button
           onClick={() => setDarkMode(!darkMode)}
-          style={{ marginLeft: '1rem', padding: '0.5rem 1rem', borderRadius: '12px', border: 'none', backgroundColor: '#7cbb00', color: '#fff', cursor: 'pointer' }}
+          style={{
+            position: "absolute",
+            top: 0,
+            right: 0,
+            padding: "0.5rem 1rem",
+            borderRadius: "12px",
+            border: "none",
+            backgroundColor: "#7cbb00",
+            color: "#fff",
+            cursor: "pointer",
+          }}
         >
-          {darkMode ? '☀️ Claro' : '🌙 Escuro'}
+          {darkMode ? "☀️ Claro" : "🌙 Escuro"}
         </button>
+      </div>
       </div>
 
       <input
