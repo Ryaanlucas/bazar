@@ -317,7 +317,32 @@ const items = [
     price: "R$ 20",
     image: "/teclado1.jpeg",
     tag: "disponível"
+  },
+  {
+    id: 40,
+    name: "Livro Mitologia Nórdica",
+    description: "Sem avarias. Tipo de venda: imediata",
+    price: "R$ 10",
+    image: "/mitologianordica.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 41,
+    name: "Livro Com Amor, Simon",
+    description: "Sem avarias. Tipo de venda: imediata.",
+    price: "R$ 20",
+    image: "/simon.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 42,
+    name: "Livro Me chame pelo seu nome",
+    description: "Usado. Tipo de venda: imediata.",
+    price: "R$ 20",
+    image: "/callme.jpeg",
+    tag: "disponível"
   }
+
 ];
 
 export default function App() {
