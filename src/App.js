@@ -133,7 +133,8 @@ const items = [
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 50",
     image: "/ferro.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 17,
@@ -324,7 +325,8 @@ const items = [
     description: "Sem avarias. Tipo de venda: imediata",
     price: "R$ 10",
     image: "/mitologianordica.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 41,
@@ -364,7 +366,8 @@ const items = [
     description: "Seminovo. Tipo de venda: imediata.",
     price: "R$ 10",
     image: "/arte.jpeg",
-    tag: "disponível"
+    tag: "inddisponível",
+    solt:true
   },
   {
     id: 45,
