@@ -324,9 +324,11 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [darkMode, setDarkMode] = useState(false);
 
-  const filteredItems = items.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredItems = items
+    .filter((item) =>
+      item.name.toLowerCase().includes(search.toLowerCase())
+    )
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div
@@ -368,7 +370,7 @@ export default function App() {
             fontFamily: "Garamond",
           }}
         >
-          Bazar Virtual - Ryan e Alef
+          Bazar Virtual de Ryan e Alef
         </h1>
         <div
           style={{
