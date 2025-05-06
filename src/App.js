@@ -418,7 +418,7 @@ const items = [
     tag: "disponível"
   },
   {
-    id: 51,
+    id: 52,
     name: "Jogo de 5 copos de vidro (1 quebrou)",
     description: "Novos/ nunca usados. Tipo de venda: imediata.",
     price: "R$ 20",
@@ -426,11 +426,11 @@ const items = [
     tag: "disponível"
   },
   {
-    id: 52,
+    id: 53,
     name: "2 Travessas de vidro",
     description: "Tamanho médio. Tipo de venda: imediata.",
     price: "R$ 20 cada um, 30 as duas",
-    image: "/travessa.jpeg",
+    image: "/travessas.jpeg",
     tag: "disponível"
   }
 ];
