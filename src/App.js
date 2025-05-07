@@ -515,7 +515,7 @@ export default function App() {
             lineHeight: "1.6",
           }}
         >
-          👋 Oi! Seja bem-vindo ao nosso <strong>bazar virtual</strong>. <br />
+          👋 Olá! Seja bem-vindo ao nosso <strong>Bazar Virtual</strong>. <br />
           Estamos disponibilizando alguns itens novos, seminovos e usados para
           venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
           Entre em contato conosco se desejar mais detalhes dos produtos e
