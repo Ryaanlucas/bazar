@@ -167,7 +167,7 @@ const items = [
   },
   {
     id: 20,
-    name: "Caixa de Transporte animal",
+    name: "Caixa de Transporte animal Tamanho Médio",
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 60",
     image: "/caixa_felino.jpeg",
@@ -193,7 +193,7 @@ const items = [
   {
     id: 23,
     name: "Monitor Dell",
-    description: "usado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1400",
+    description: "Em ótimo estado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1400",
     price: "R$ 800",
     image: "/monitordell.jpeg",
     tag: "disponível"
@@ -355,7 +355,8 @@ const items = [
     description: "Usado. Tipo de venda: imediata.",
     price: "R$ 40",
     image: "/crepusculo.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 44,
@@ -388,7 +389,8 @@ const items = [
     description: "Marcas de uso. Tipo de venda: imediata.",
     price: "R$ 15",
     image: "/coraline.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 48,
@@ -421,7 +423,8 @@ const items = [
     description: "Novos. Tipo de venda: imediata.",
     price: "R$ 35 cada ou os 2 por 60",
     image: "/onoroff.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 52,
