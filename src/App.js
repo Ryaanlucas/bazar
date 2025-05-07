@@ -86,7 +86,7 @@ const items = [
     description: "usado / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
     price: "R$ 1.700 à vista ou 1.800 parcelado",
     image: "/tv50.jpeg",
-    tag: "indisponível"
+    tag: "disponível"
   },
   {
     id: 11,
