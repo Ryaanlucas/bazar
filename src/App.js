@@ -123,7 +123,7 @@ const items = [
   },
   {
     id: 15,
-    name: "Abajur com lampâda luz amarela ( c/ avarias na parte interior )",
+    name: "Abajur ( c/ avarias na parte interior )",
     description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 90",
     price: "R$ 40",
     image: "/abajur.jpeg",
