@@ -57,7 +57,7 @@ const items = [
   {
     id: 7,
     name: "Aspirador inteligente",
-    description: "pouco usado. Tipo de venda: imediata. Valor original: R$ 50",
+    description: "pouco usado. Tipo de venda: imediata. Valor original: R$ 75",
     price: "R$ 45",
     image: "/aspirador.jpeg",
     tag: "indisponível",
