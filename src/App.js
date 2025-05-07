@@ -84,10 +84,9 @@ const items = [
     id: 10,
     name: "Tv Semp Roku 50p",
     description: "usado / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
-    price: "R$ 1700",
+    price: "R$ 1.700 à vista ou 1.800 parcelado",
     image: "/tv50.jpeg",
-    tag: "indisponível",
-    sold: true
+    tag: "indisponível"
   },
   {
     id: 11,
@@ -192,7 +191,7 @@ const items = [
   },
   {
     id: 23,
-    name: "Monitor Dell",
+    name: "Monitor Dell 24p.",
     description: "Em ótimo estado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1400",
     price: "R$ 800",
     image: "/monitordell.jpeg",
@@ -521,6 +520,7 @@ export default function App() {
           venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
           Entre em contato conosco se desejar mais detalhes dos produtos e
           agendamento da retirada. <br />
+            <br /> Aceitamos cartão de crédito e débito!
           <br />🌿 Sinta-se à vontade 😁
         </div>
         <button
