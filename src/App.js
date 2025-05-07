@@ -16,7 +16,8 @@ const items = [
     description: "usado / 1 mês. Tipo de venda: imediata. Valor original: R$ 90",
     price: "R$ 30",
     image: "/power.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold: true
   },
   {
     id: 3,
@@ -32,7 +33,8 @@ const items = [
     description: "usado / 6 meses. Tipo de venda: imediata. Valor original: R$ 60",
     price: "R$ 25",
     image: "/umidificador.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 5,
@@ -56,7 +58,7 @@ const items = [
     id: 7,
     name: "Aspirador inteligente",
     description: "pouco usado. Tipo de venda: imediata. Valor original: R$ 50",
-    price: "R$ 30",
+    price: "R$ 45",
     image: "/aspirador.jpeg",
     tag: "indisponível",
     sold: true
@@ -93,7 +95,8 @@ const items = [
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 300",
     price: "R$ 100",
     image: "/sofa.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 12,
@@ -121,7 +124,7 @@ const items = [
   },
   {
     id: 15,
-    name: "Abajur luz amarela ( c/ avarias )",
+    name: "Abajur com lampâda luz amarela ( c/ avarias na parte interior )",
     description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 90",
     price: "R$ 40",
     image: "/abajur.jpeg",
@@ -174,7 +177,7 @@ const items = [
     id: 21,
     name: "Alexa echo Dot 3° geração",
     description: "novo / sem avarias. Tipo de venda: final de maio. Valor original: R$ 650",
-    price: "R$ 350",
+    price: "R$ 450",
     image: "/alexa.jpeg",
     tag: "disponível"
   },
@@ -184,7 +187,8 @@ const items = [
     description: "usado / sem avarias. Tipo de venda: imediata. Valor original: R$ 120",
     price: "R$ 50",
     image: "/heart.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 23,
@@ -239,7 +243,7 @@ const items = [
     id: 30,
     name: "jibóia / 1 ano e meio",
     description: "Tipo de venda: imediata",
-    price: "R$ 30",
+    price: "R$ 25",
     image: "/jiboia.jpeg",
     tag: "disponível"
   },
@@ -301,7 +305,8 @@ const items = [
     description: "Sem defeitos, Tipo de venda: imediata. Valor original: R$ 80",
     price: "R$ 50",
     image: "/potes.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold: true
   },
   {
     id: 38,
@@ -424,7 +429,8 @@ const items = [
     description: "Novos/ nunca usados. Tipo de venda: imediata.",
     price: "R$ 20",
     image: "/copos.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 53,
@@ -432,7 +438,8 @@ const items = [
     description: "Tamanho médio. Tipo de venda: imediata.",
     price: "R$ 20 cada um, 30 as duas",
     image: "/travessas.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   }
 ];
 
