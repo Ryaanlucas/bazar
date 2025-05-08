@@ -451,7 +451,7 @@ const items = [
     id: 54,
     name: "Mop Giratório Esfregão Top Cabo Inox",
     description: "5 meses de uso. Tipo de venda: imediata.",
-    price: "40",
+    price: "R$ 40",
     image: "/mop.jpeg",
     tag: "disponível"
   },
@@ -459,7 +459,7 @@ const items = [
     id: 55,
     name: "Mini sapateira, comporta até 8 pares",
     description: "3 meses de uso. Tipo de venda: imediata.",
-    price: "25",
+    price: "R$ 25",
     image: "/minisapateira.jpeg",
     tag: "disponível"
   }
