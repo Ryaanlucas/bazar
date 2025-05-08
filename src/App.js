@@ -23,7 +23,7 @@ const items = [
     id: 3,
     name: "JBL Charge Essencial 2",
     description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 900",
-    price: "R$ 450",
+    price: "R$ 400",
     image: "/somjbl.jpeg",
     tag: "disponível"
   },
@@ -171,14 +171,14 @@ const items = [
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 60",
     image: "/caixa_felino.jpeg",
-    tag: "disponível",
+    tag: "indisponível",
     sold:true
   },
   {
     id: 21,
     name: "Alexa Echo Dot 3° geração",
     description: "novo / sem avarias. Tipo de venda: final de maio. Valor original: R$ 650",
-    price: "R$ 450",
+    price: "R$ 350",
     image: "/alexa.jpeg",
     tag: "disponível"
   },
