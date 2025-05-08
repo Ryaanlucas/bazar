@@ -446,6 +446,22 @@ const items = [
     image: "/travessas.jpeg",
     tag: "indisponível",
     sold:true
+  },
+  {
+    id: 54,
+    name: "Mop Giratório Esfregão Top Cabo Inox",
+    description: "5 meses de uso. Tipo de venda: imediata.",
+    price: "40",
+    image: "/mop.jpeg",
+    tag: "disponível"
+  },
+  {
+    id: 55,
+    name: "Mini sapateira, comporta até 8 pares",
+    description: "3 meses de uso. Tipo de venda: imediata.",
+    price: "25",
+    image: "/minisapateira.jpeg",
+    tag: "disponível"
   }
 ];
 
