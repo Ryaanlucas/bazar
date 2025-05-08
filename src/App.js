@@ -76,14 +76,14 @@ const items = [
     id: 9,
     name: "Fogão Atlas 4 bocas ( sem avarias )",
     description: "usado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1200",
-    price: "R$ 700",
+    price: "R$ 600",
     image: "/fogao.png",
     tag: "disponível"
   },
   {
     id: 10,
     name: "Tv Semp Roku 50p",
-    description: "usado / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
+    description: "novo / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
     price: "R$ 1.700 à vista ou 1.800 parcelado",
     image: "/tv50.jpeg",
     tag: "disponível"
@@ -103,7 +103,8 @@ const items = [
     description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 380",
     price: "R$ 150",
     image: "/escudo_frente.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 13,
@@ -170,11 +171,12 @@ const items = [
     description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100",
     price: "R$ 60",
     image: "/caixa_felino.jpeg",
-    tag: "disponível"
+    tag: "disponível",
+    sold:true
   },
   {
     id: 21,
-    name: "Alexa echo Dot 3° geração",
+    name: "Alexa Echo Dot 3° geração",
     description: "novo / sem avarias. Tipo de venda: final de maio. Valor original: R$ 650",
     price: "R$ 450",
     image: "/alexa.jpeg",
@@ -234,7 +236,7 @@ const items = [
     id: 29,
     name: "Zamiocuca / 9 meses",
     description: "Tipo de venda: imediata",
-    price: "R$ 30",
+    price: "R$ 25",
     image: "/zamiocuca.jpeg",
     tag: "disponível"
   },
@@ -261,7 +263,8 @@ const items = [
     description: "Novo / sem avarias. Tipo de venda: imediata",
     price: "R$ 60",
     image: "/balanca_dazz.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 33,
@@ -313,7 +316,8 @@ const items = [
     description: "usado / Tipo de venda: imediata. Valor original: R$ 50 os dois",
     price: "R$ 25 os dois.",
     image: "/marioluigi.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 39,
