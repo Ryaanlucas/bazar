@@ -214,6 +214,7 @@ const items = [
     price: "R$ 30",
     image: "/orquidea_grande.jpeg",
     tag: "disponível",
+    sold:true
   },
   {
     id: 27,
@@ -299,7 +300,8 @@ const items = [
     description: "Sem defeitos / 2 anos. Tipo de venda: imediata. Valor original: R$ 200",
     price: "R$ 100",
     image: "/teclado.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 37,
@@ -461,7 +463,8 @@ const items = [
     description: "3 meses de uso. Tipo de venda: imediata.",
     price: "R$ 25",
     image: "/minisapateira.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   }
 ];
 
