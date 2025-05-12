@@ -128,7 +128,7 @@ const items = [
     name: "Abajur ( c/ avarias na parte interior )",
     description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 90",
     price: "R$ 40",
-    image: "/abajur.jpeg",
+    image: "/abajur2.jpeg",
     tag: "disponível"
   },
   {
