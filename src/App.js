@@ -180,7 +180,8 @@ const items = [
     description: "novo / sem avarias. Tipo de venda: final de maio. Valor original: R$ 650",
     price: "R$ 350",
     image: "/alexa.jpeg",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 22,
@@ -213,7 +214,7 @@ const items = [
     description: "Tipo de venda: imediata",
     price: "R$ 30",
     image: "/orquidea_grande.jpeg",
-    tag: "disponível",
+    tag: "indisponível",
     sold:true
   },
   {
