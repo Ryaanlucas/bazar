@@ -245,7 +245,7 @@ const items = [
   },
   {
     id: 30,
-    name: "jibóia / 1 ano e meio",
+    name: "Jibóia / 1 ano e meio",
     description: "Tipo de venda: imediata",
     price: "R$ 25",
     image: "/jiboia.jpeg",
@@ -253,7 +253,7 @@ const items = [
   },
   {
     id: 31,
-    name: "cafeteira star wars / Mallory",
+    name: "Cafeteira star wars / Mallory",
     description: "Usado / 2 anos. Tipo de venda: imediata",
     price: "R$ 50",
     image: "/cafeteira_starwars.jpeg",
@@ -289,7 +289,7 @@ const items = [
   },
   {
     id: 35,
-    name: "pesos 3kg cada",
+    name: "Pesos 3kg cada",
     description: "Tipo de venda: imediata",
     price: "R$ 15",
     image: "/pesos.jpeg",
@@ -316,7 +316,7 @@ const items = [
   },
   {
     id: 38,
-    name: "chapéu mario e luigi",
+    name: "Chapéu mario e luigi",
     description: "usado / Tipo de venda: imediata. Valor original: R$ 50 os dois",
     price: "R$ 25 os dois.",
     image: "/marioluigi.jpeg",
