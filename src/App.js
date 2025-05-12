@@ -84,7 +84,8 @@ const items = [
     id: 10,
     name: "Tv Semp Roku 50p",
     description: "novo / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000",
-    price: "R$ 1.700 à vista ou 1.800 parcelado",
+    price: "R$ 1700",
+    priceNote: "à vista ou R$ 1800 parcelado",
     image: "/tv50.jpeg",
     tag: "disponível"
   },
