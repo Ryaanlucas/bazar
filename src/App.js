@@ -459,7 +459,7 @@ const items = [
     tag: "disponível"
   },
   {
-    id: 55,
+    id: 24,
     name: "Mini sapateira, comporta até 8 pares",
     description: "3 meses de uso. Tipo de venda: imediata.",
     price: "R$ 25",
