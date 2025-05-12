@@ -474,10 +474,15 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [darkMode, setDarkMode] = useState(false);
 
-  const filteredItems = items
-    .filter((item) =>
-      item.name.toLowerCase().includes(search.toLowerCase())
-    )
+  const filteredItems = items.filter((item) =>
+    item.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const availableItems = filteredItems
+    .filter((item) => !item.sold)
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const soldItems = filteredItems
+    .filter((item) => item.sold)
     .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
@@ -570,68 +575,84 @@ export default function App() {
         placeholder="Buscar produto..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        style={{ padding: '0.5rem', width: '100%', marginBottom: '2rem', borderRadius: '12px', border: '1px solid #ccc' }}
+        style={{
+          padding: '0.5rem',
+          width: '100%',
+          marginBottom: '2rem',
+          borderRadius: '12px',
+          border: '1px solid #ccc'
+        }}
       />
 
+      <h2 style={{ marginBottom: '1rem', color: '#4e6b1a' }}>📦 Itens disponíveis</h2>
       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
-        {filteredItems.map((item) => (
-          <div key={item.id} style={{ backgroundColor: darkMode ? '#2a2a2a' : '#fefae0', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
-            <div style={{ position: 'relative', overflow: 'hidden' }}>
-              <img
-                src={item.image}
-                alt={item.name}
-                style={{
-                  width: '100%',
-                  height: '350px',
-                  objectFit: 'cover',
-                  transition: 'transform 0.3s ease-in-out',
-                  cursor: 'zoom-in',
-                  opacity: item.sold ? 0.6 : 1
-                }}
-                onClick={() => !item.sold && window.open(item.image, '_blank')}
-              />
-              {item.tag && (
-                <div style={{
-                  position: 'absolute',
-                  top: '10px',
-                  left: '10px',
-                  backgroundColor: item.tag.toLowerCase() === 'disponível' ? '#7cbb00' : '#ff6347',
-                  color: '#fff',
-                  padding: '0.25rem 0.5rem',
-                  borderRadius: '8px',
-                  fontSize: '0.75rem',
-                  fontWeight: 'bold'
-                }}>
-                  {item.tag.toUpperCase()}
-                </div>
-              )}
-            </div>
-            <div style={{ padding: '1rem' }}>
-              <h2 style={{ fontSize: '1.25rem', color: '#5a5a00', fontWeight: '600' }}>{item.name}</h2>
-              <p style={{ fontSize: '0.875rem', color: '#666', margin: '0.5rem 0' }}>{item.description}</p>
-              <p style={{ fontWeight: 'bold', fontSize: '1.125rem', color: '#4e6b1a' }}>{item.price}</p>
-              {!item.sold ? (
-                <a
-                  href="https://wa.me/5592993770892?text=Ol%C3%A1%2C%20estava%20olhando%20seu%20bazar%20e%20me%20interessei%20por%20alguns%20itens%20%F0%9F%98%8A%2C%20poderia%20conversar%3F"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#7cbb00', color: 'white', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', textDecoration: 'none', fontSize: '1rem' }}
-                >
-                  Falar no WhatsApp
-                </a>
-              ) : (
-                <div style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#ccc', color: '#444', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', fontSize: '1rem', fontWeight: 'bold' }}>
-                  Vendido
-                </div>
-              )}
-            </div>
-          </div>
+        {availableItems.map((item) => (
+          <ItemCard key={item.id} item={item} darkMode={darkMode} />
+        ))}
+      </div>
+
+      <h2 style={{ margin: '3rem 0 1rem', color: '#888' }}>✅ Vendidos</h2>
+      <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
+        {soldItems.map((item) => (
+          <ItemCard key={item.id} item={item} darkMode={darkMode} />
         ))}
       </div>
     </div>
   );
 }
 
-
-
-
+function ItemCard({ item, darkMode }) {
+  return (
+    <div style={{ backgroundColor: darkMode ? '#2a2a2a' : '#fefae0', borderRadius: '1rem', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', overflow: 'hidden' }}>
+        <img
+          src={item.image}
+          alt={item.name}
+          style={{
+            width: '100%',
+            height: '350px',
+            objectFit: 'cover',
+            transition: 'transform 0.3s ease-in-out',
+            cursor: 'zoom-in',
+            opacity: item.sold ? 0.6 : 1
+          }}
+          onClick={() => !item.sold && window.open(item.image, '_blank')}
+        />
+        {item.tag && (
+          <div style={{
+            position: 'absolute',
+            top: '10px',
+            left: '10px',
+            backgroundColor: item.tag.toLowerCase() === 'disponível' ? '#7cbb00' : '#ff6347',
+            color: '#fff',
+            padding: '0.25rem 0.5rem',
+            borderRadius: '8px',
+            fontSize: '0.75rem',
+            fontWeight: 'bold'
+          }}>
+            {item.tag.toUpperCase()}
+          </div>
+        )}
+      </div>
+      <div style={{ padding: '1rem' }}>
+        <h2 style={{ fontSize: '1.25rem', color: '#5a5a00', fontWeight: '600' }}>{item.name}</h2>
+        <p style={{ fontSize: '0.875rem', color: '#666', margin: '0.5rem 0' }}>{item.description}</p>
+        <p style={{ fontWeight: 'bold', fontSize: '1.125rem', color: '#4e6b1a' }}>{item.price}</p>
+        {!item.sold ? (
+          <a
+            href="https://wa.me/5592993770892?text=Ol%C3%A1%2C%20estava%20olhando%20seu%20bazar%20e%20me%20interessei%20por%20alguns%20itens%20%F0%9F%98%8A%2C%20poderia%20conversar%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#7cbb00', color: 'white', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', textDecoration: 'none', fontSize: '1rem' }}
+          >
+            Falar no WhatsApp
+          </a>
+        ) : (
+          <div style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#ccc', color: '#444', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', fontSize: '1rem', fontWeight: 'bold' }}>
+            Vendido
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
