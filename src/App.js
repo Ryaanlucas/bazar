@@ -78,7 +78,8 @@ const items = [
     description: "usado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1200",
     price: "R$ 600",
     image: "/fogao.png",
-    tag: "disponível"
+    tag: "indisponível",
+    sold:true
   },
   {
     id: 10,
