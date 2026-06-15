@@ -306,7 +306,7 @@ function ItemCard({ item, darkMode }) {
         <div style={{ marginTop: "auto", paddingTop: "0.8rem" }}>
           {!item.sold ? (
             <a
-              href="https://wa.me/5541995281904?text=Ol%C3%A1%2C%20estava%20olhando%20seu%20bazar%20e%20me%20interessei%20por%20alguns%20itens%20%F0%9F%98%8A%2C%20poderia%20conversar%3F"
+              href="https://wa.me/5541995281904?text=Ol%C3%A1%2C%20estava%20olhando%20seu%20bazar%20e%20me%20interessei%20por%20alguns%20itens%20poderia%20conversar%3F"
               target="_blank"
               rel="noopener noreferrer"
               style={{
