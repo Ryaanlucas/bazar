@@ -174,7 +174,6 @@ const items = [
   { id: 25, name: "Rosa do deserto / 1 ano", description: "Tipo de venda: imediata.", price: "R$ 30", image: "/rosa_deserto.jpeg", tag: "disponível" },
   { id: 26, name: "Alocácia Grande 7 meses", description: "Tipo de venda: imediata", price: "R$ 30", image: "/orquidea_grande.jpeg", tag: "indisponível", sold: true },
   { id: 27, name: "Alocácia pequena 3 meses", description: "Tipo de venda: imediata", price: "R$ 20", image: "/orquidea.jpeg", tag: "indisponível", sold: true },
-  { id: 28, name: "Sapatos DARMAND Marrom seminovo", description: "Usado poucas vezes / tamano 41/42. Tipo de venda: imediata. Valor original: R$ 250", price: "R$ 90", image: "/sapato_darmand.jpeg", tag: "disponível" },
   { id: 29, name: "Zamiocuca / 9 meses", description: "Tipo de venda: imediata", price: "R$ 25", image: "/zamiocuca.jpeg", tag: "disponível" },
   { id: 30, name: "Jibóia / 1 ano e meio", description: "Tipo de venda: imediata", price: "R$ 25", image: "/jiboia.jpeg", tag: "disponível" },
   { id: 31, name: "Cafeteira star wars / Mallory", description: "Usado / 2 anos. Tipo de venda: imediata", price: "R$ 50", image: "/cafeteira_starwars.jpeg", tag: "indisponível", sold: true },
