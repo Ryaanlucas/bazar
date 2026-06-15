@@ -1,50 +1,88 @@
 import React, { useState } from "react";
 
 const TruckLogo = () => (
-  <svg width="180" viewBox="0 0 680 320" role="img" xmlns="http://www.w3.org/2000/svg" style={{ display: "block", margin: "0 auto" }}>
-    <title>Logo caminhão de mudança</title>
-    <desc>Caminhão de mudança estilizado em verde oliva com detalhes creme</desc>
+  <svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg" style={{ display: "block", margin: "0 auto", maxWidth: "480px" }}>
+    <title>Logo caminhão de mudança em movimento</title>
+    <desc>Caminhão de mudança em verde oliva correndo numa pista, com linhas de velocidade e nuvens</desc>
     <style>{`
+      .sky { fill: #dbe8c8; }
+      .road { fill: #6b6b6b; }
+      .road-line { stroke: #e8dfa0; stroke-width: 4; stroke-dasharray: 30 20; stroke-linecap: round; }
+      .grass { fill: #7a9e5a; }
       .truck-body { fill: #4a6741; }
       .truck-cab { fill: #3a5232; }
-      .truck-window { fill: #a8c5a0; opacity: 0.85; }
+      .truck-window { fill: #a8c5a0; }
       .truck-wheel { fill: #2b2b2b; }
       .truck-hubcap { fill: #d4c9a0; }
-      .truck-ground { fill: #4a6741; opacity: 0.18; }
       .box-item { fill: #c5b882; }
+      .speed-line { stroke: #c5b882; stroke-linecap: round; opacity: 0.55; }
+      .cloud { fill: #f5f0e8; opacity: 0.85; }
+      .logo-text { font-family: Georgia, serif; font-weight: 700; fill: #3a5232; }
+      .logo-sub { font-family: Georgia, serif; font-weight: 400; fill: #6b7a5a; }
+      .sun { fill: #e8dfa0; }
+      .road-edge { fill: #8a8a6a; }
     `}</style>
-    <ellipse cx="310" cy="228" rx="180" ry="14" className="truck-ground"/>
-    <rect x="100" y="100" width="260" height="115" rx="6" className="truck-body"/>
-    <line x1="230" y1="105" x2="230" y2="210" stroke="#3a5232" strokeWidth="2" fill="none"/>
-    <line x1="100" y1="155" x2="360" y2="155" stroke="#3a5232" strokeWidth="1.5" fill="none"/>
-    <rect x="222" y="148" width="16" height="14" rx="3" fill="#d4c9a0"/>
-    <rect x="226" y="151" width="8" height="8" rx="2" fill="#a89a6a"/>
-    <rect x="115" y="88" width="42" height="18" rx="3" className="box-item" opacity="0.9"/>
-    <line x1="136" y1="88" x2="136" y2="106" stroke="#9a8a5a" strokeWidth="1" fill="none"/>
-    <rect x="165" y="82" width="38" height="22" rx="3" className="box-item" opacity="0.85"/>
-    <rect x="210" y="86" width="44" height="18" rx="3" className="box-item" opacity="0.9"/>
-    <line x1="232" y1="86" x2="232" y2="104" stroke="#9a8a5a" strokeWidth="1" fill="none"/>
-    <rect x="360" y="118" width="115" height="97" rx="8" className="truck-cab"/>
-    <path d="M360 130 Q380 105 430 103 L475 103 L475 118 L360 118 Z" className="truck-cab"/>
-    <rect x="370" y="112" width="75" height="52" rx="5" className="truck-window"/>
-    <line x1="410" y1="112" x2="410" y2="164" stroke="#3a5232" strokeWidth="2" fill="none"/>
-    <rect x="468" y="170" width="18" height="10" rx="3" fill="#e8dfa0"/>
-    <rect x="360" y="205" width="115" height="10" rx="3" fill="#2e3d28"/>
-    <rect x="420" y="175" width="20" height="6" rx="2" fill="#d4c9a0"/>
-    <rect x="355" y="180" width="12" height="25" rx="2" fill="#2e3d28"/>
-    <circle cx="165" cy="228" r="28" className="truck-wheel"/>
-    <circle cx="165" cy="228" r="14" className="truck-hubcap"/>
-    <circle cx="165" cy="228" r="5" fill="#4a6741"/>
-    <circle cx="230" cy="228" r="28" className="truck-wheel"/>
-    <circle cx="230" cy="228" r="14" className="truck-hubcap"/>
-    <circle cx="230" cy="228" r="5" fill="#4a6741"/>
-    <circle cx="435" cy="228" r="28" className="truck-wheel"/>
-    <circle cx="435" cy="228" r="14" className="truck-hubcap"/>
-    <circle cx="435" cy="228" r="5" fill="#3a5232"/>
-    <rect x="140" y="222" width="116" height="8" rx="3" fill="#2e3d28"/>
-    <line x1="80" y1="140" x2="96" y2="140" stroke="#d4c9a0" strokeWidth="2.5" strokeLinecap="round" opacity="0.7"/>
-    <line x1="75" y1="155" x2="94" y2="155" stroke="#d4c9a0" strokeWidth="2" strokeLinecap="round" opacity="0.5"/>
-    <line x1="82" y1="170" x2="96" y2="170" stroke="#d4c9a0" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+    <rect x="0" y="0" width="680" height="230" className="sky"/>
+    <circle cx="600" cy="60" r="38" className="sun" opacity="0.7"/>
+    <circle cx="600" cy="60" r="28" className="sun"/>
+    <ellipse cx="120" cy="55" rx="55" ry="22" className="cloud"/>
+    <ellipse cx="155" cy="45" rx="38" ry="20" className="cloud"/>
+    <ellipse cx="88" cy="48" rx="32" ry="18" className="cloud"/>
+    <ellipse cx="400" cy="75" rx="45" ry="18" className="cloud"/>
+    <ellipse cx="430" cy="65" rx="30" ry="16" className="cloud"/>
+    <ellipse cx="375" cy="68" rx="28" ry="15" className="cloud"/>
+    <rect x="0" y="225" width="680" height="18" className="grass"/>
+    <rect x="0" y="295" width="680" height="20" className="grass"/>
+    <rect x="0" y="238" width="680" height="62" className="road"/>
+    <rect x="0" y="238" width="680" height="5" className="road-edge" opacity="0.4"/>
+    <rect x="0" y="295" width="680" height="5" className="road-edge" opacity="0.4"/>
+    <line x1="0" y1="269" x2="680" y2="269" className="road-line"/>
+    <line x1="18" y1="198" x2="88" y2="198" className="speed-line" strokeWidth="3"/>
+    <line x1="10" y1="210" x2="95" y2="210" className="speed-line" strokeWidth="2.5"/>
+    <line x1="22" y1="222" x2="92" y2="222" className="speed-line" strokeWidth="2"/>
+    <line x1="5" y1="235" x2="80" y2="235" className="speed-line" strokeWidth="1.5"/>
+    <line x1="14" y1="185" x2="75" y2="185" className="speed-line" strokeWidth="2"/>
+    <line x1="8" y1="172" x2="65" y2="172" className="speed-line" strokeWidth="1.5" opacity="0.3"/>
+    <rect x="130" y="155" width="270" height="110" rx="5" className="truck-body"/>
+    <line x1="265" y1="160" x2="265" y2="260" stroke="#3a5232" strokeWidth="2"/>
+    <line x1="130" y1="208" x2="400" y2="208" stroke="#3a5232" strokeWidth="1.5"/>
+    <rect x="257" y="201" width="16" height="13" rx="3" fill="#d4c9a0"/>
+    <rect x="261" y="204" width="8" height="7" rx="2" fill="#a89a6a"/>
+    <rect x="148" y="143" width="40" height="17" rx="3" className="box-item" opacity="0.9"/>
+    <line x1="168" y1="143" x2="168" y2="160" stroke="#9a8a5a" strokeWidth="1"/>
+    <rect x="196" y="137" width="36" height="22" rx="3" className="box-item" opacity="0.85"/>
+    <rect x="240" y="141" width="42" height="18" rx="3" className="box-item" opacity="0.9"/>
+    <line x1="261" y1="141" x2="261" y2="159" stroke="#9a8a5a" strokeWidth="1"/>
+    <rect x="400" y="170" width="110" height="95" rx="7" className="truck-cab"/>
+    <path d="M400 182 Q418 155 462 153 L510 153 L510 170 L400 170 Z" className="truck-cab"/>
+    <rect x="410" y="162" width="72" height="50" rx="5" className="truck-window"/>
+    <line x1="448" y1="162" x2="448" y2="212" stroke="#3a5232" strokeWidth="2"/>
+    <rect x="505" y="220" width="16" height="9" rx="3" fill="#e8dfa0"/>
+    <rect x="510" y="155" width="8" height="25" rx="3" fill="#2e3d28"/>
+    <circle cx="518" cy="148" r="7" fill="#c5c5b0" opacity="0.4"/>
+    <circle cx="524" cy="138" r="5" fill="#c5c5b0" opacity="0.3"/>
+    <circle cx="521" cy="128" r="4" fill="#c5c5b0" opacity="0.2"/>
+    <rect x="400" y="255" width="110" height="8" rx="3" fill="#2e3d28"/>
+    <rect x="458" y="224" width="18" height="6" rx="2" fill="#d4c9a0"/>
+    <rect x="510" y="175" width="12" height="8" rx="2" fill="#2e3d28"/>
+    <rect x="393" y="228" width="12" height="25" rx="2" fill="#2e3d28"/>
+    <circle cx="195" cy="273" r="27" className="truck-wheel"/>
+    <circle cx="195" cy="273" r="13" className="truck-hubcap"/>
+    <circle cx="195" cy="273" r="4" fill="#4a6741"/>
+    <line x1="195" y1="260" x2="195" y2="286" stroke="#4a6741" strokeWidth="2"/>
+    <line x1="182" y1="273" x2="208" y2="273" stroke="#4a6741" strokeWidth="2"/>
+    <circle cx="258" cy="273" r="27" className="truck-wheel"/>
+    <circle cx="258" cy="273" r="13" className="truck-hubcap"/>
+    <circle cx="258" cy="273" r="4" fill="#4a6741"/>
+    <line x1="258" y1="260" x2="258" y2="286" stroke="#4a6741" strokeWidth="2"/>
+    <line x1="245" y1="273" x2="271" y2="273" stroke="#4a6741" strokeWidth="2"/>
+    <circle cx="462" cy="273" r="27" className="truck-wheel"/>
+    <circle cx="462" cy="273" r="13" className="truck-hubcap"/>
+    <circle cx="462" cy="273" r="4" fill="#3a5232"/>
+    <line x1="462" y1="260" x2="462" y2="286" stroke="#3a5232" strokeWidth="2"/>
+    <line x1="449" y1="273" x2="475" y2="273" stroke="#3a5232" strokeWidth="2"/>
+    <rect x="170" y="266" width="114" height="7" rx="3" fill="#2e3d28"/>
+    <text x="340" y="352" textAnchor="middle" className="logo-sub" fontSize="20">itens novos, seminovos e usados</text>
   </svg>
 );
 
