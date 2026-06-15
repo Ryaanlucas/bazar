@@ -1,1 +1,5 @@
-body { margin: 0; font-family: Arial, sans-serif; background-color: #b5d67d; }
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f0e8;
+}
