@@ -526,7 +526,7 @@ export default function App() {
             fontFamily: "Garamond",
           }}
         >
-          Bazar Virtual de Ryan e Alef
+          Bazar Virtual de Mudança
         </h1>
         <div
           style={{
@@ -546,12 +546,12 @@ export default function App() {
             lineHeight: "1.6",
           }}
         >
-          👋 Olá! Seja bem-vindo ao nosso <strong>Bazar Virtual</strong>. <br />
-          Estamos disponibilizando alguns itens novos, seminovos e usados para
-          venda pois estamos de mudança dentro de algumas semanas. 📦✨<br />
-          Entre em contato conosco se desejar mais detalhes dos produtos e
+          👋 Olá! Seja bem-vindo ao meu bazar virtual <strong>Bazar Virtual</strong>. <br />
+          Estou disponibilizando alguns itens novos, seminovos e usados para
+          venda pois estou de mudança em alguns dias. 📦✨<br />
+          Entre em contato se desejar mais detalhes dos produtos e
           agendamento da retirada. <br />
-            <br /> Aceitamos cartão de crédito e débito!
+            <br /> Aceito cartão de crédito e débito!
           <br />🌿 Sinta-se à vontade 😁
         </div>
         <button
@@ -641,7 +641,7 @@ function ItemCard({ item, darkMode }) {
         <p style={{ fontWeight: 'bold', fontSize: '1.125rem', color: '#4e6b1a' }}>{item.price}</p>
         {!item.sold ? (
           <a
-            href="https://wa.me/5592993770892?text=Ol%C3%A1%2C%20estava%20olhando%20seu%20bazar%20e%20me%20interessei%20por%20alguns%20itens%20%F0%9F%98%8A%2C%20poderia%20conversar%3F"
+            href="https://wa.me/5541995281904?text=Ol%C3%A1%2C%20estava%20olhando%20seu%20bazar%20e%20me%20interessei%20por%20alguns%20itens%20%F0%9F%98%8A%2C%20poderia%20conversar%3F"
             target="_blank"
             rel="noopener noreferrer"
             style={{ display: 'inline-block', marginTop: '1rem', backgroundColor: '#7cbb00', color: 'white', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', textAlign: 'center', textDecoration: 'none', fontSize: '1rem' }}
