@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const TruckLogo = () => (
   <svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg" style={{ display: "block", margin: "0 auto", maxWidth: "480px" }}>
@@ -124,6 +124,7 @@ const TruckLogo = () => (
       <line x1="446" y1="257" x2="478" y2="289" stroke="#3a5232" strokeWidth="2"/>
       <line x1="478" y1="257" x2="446" y2="289" stroke="#3a5232" strokeWidth="2"/>
     </g>
+
     <text x="340" y="352" textAnchor="middle" className="logo-sub">itens novos, seminovos e usados</text>
   </svg>
 );
@@ -147,64 +148,73 @@ const COLORS = {
 };
 
 const items = [
-  { id: 1, name: "Carregador 33w Turbo tipo C", description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 65", price: "R$ 30", image: "/carregador2.jpeg", tag: "indisponível", sold: true },
-  { id: 2, name: "Powerbank por indução 5000mAh Iphone", description: "usado / 1 mês. Tipo de venda: imediata. Valor original: R$ 90", price: "R$ 30", image: "/power.jpeg", tag: "indisponível", sold: true },
-  { id: 3, name: "JBL Charge Essencial 2", description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 900", price: "R$ 400", image: "/somjbl.jpeg", tag: "disponível" },
-  { id: 4, name: "Umidificador", description: "usado / 6 meses. Tipo de venda: imediata. Valor original: R$ 60", price: "R$ 25", image: "/umidificador.jpeg", tag: "indisponível", sold: true },
-  { id: 5, name: "Ventilador Pequeno", description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100", price: "R$ 40", image: "/ventilador2.jpeg", tag: "indisponível", sold: true },
-  { id: 6, name: "Air fryer Elgin 4L", description: "usado / 1 ano e meio. Tipo de venda: imediata. Valor original: R$ 250", price: "R$ 120", image: "/airfry.jpeg", tag: "indisponível", sold: true },
-  { id: 7, name: "Aspirador inteligente", description: "pouco usado. Tipo de venda: imediata. Valor original: R$ 75", price: "R$ 45", image: "/aspirador.jpeg", tag: "indisponível", sold: true },
-  { id: 8, name: "Geladeira Eletrolux 362 litros", description: "usado / 5 anos. Tipo de venda: final de maio. Valor original: R$ 1700", price: "R$ 500", image: "/geladeira.jpeg", tag: "indisponível", sold: true },
-  { id: 9, name: "Fogão Atlas 4 bocas ( sem avarias )", description: "usado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1200", price: "R$ 600", image: "/fogao.png", tag: "indisponível", sold: true },
-  { id: 10, name: "Tv Semp Roku 50p", description: "novo / 8 meses. Tipo de venda: final de maio. Valor original: R$ 2000", price: "R$ 1700", priceNote: "à vista ou R$ 1800 parcelado", image: "/tv50.jpeg", tag: "disponível" },
-  { id: 11, name: "Sofá Beje ( laterais inclinadas )", description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 300", price: "R$ 100", image: "/sofa.jpeg", tag: "indisponível", sold: true },
-  { id: 12, name: "Escudo Capitão América ( metal )", description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 380", price: "R$ 150", image: "/escudo_frente.jpeg", tag: "indisponível", sold: true },
-  { id: 13, name: "Colchão Inflável Solteiro Multiuso Até 100Kgs", description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 135", price: "R$ 80", image: "/colchao.jpeg", tag: "disponível" },
-  { id: 14, name: "Patins Inline Traxart 41", description: "usado / 8 meses. Tipo de venda: imediata. Valor original: R$ 900", price: "R$ 350", image: "/patins.jpeg", tag: "disponível" },
-  { id: 15, name: "Abajur ( c/ avarias na parte interior )", description: "usado / 2 anos. Tipo de venda: imediata. Valor original: R$ 90", price: "R$ 40", image: "/abajur2.jpeg", tag: "disponível" },
-  { id: 16, name: "Ferro de passar ( bom estado )", description: "usado / 1 ano. Tipo de venda: imediata. Valor original: R$ 100", price: "R$ 50", image: "/ferro.jpeg", tag: "indisponível", sold: true },
-  { id: 17, name: "Varal de chão Aço", description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100", price: "R$ 50", image: "/varal.jpeg", tag: "indisponível", sold: true },
-  { id: 18, name: "Poltrona Chaise Sintética Média", description: "novo / 4 meses. Tipo de venda: Imediata. Valor original: R$ 1200", price: "R$ 900", image: "/poltrona.jpeg", tag: "disponível" },
-  { id: 19, name: "Cadeira escritório azul/preto", description: "usado / 3 anos / com avaria. Tipo de venda: Imediata. Valor original: R$ 650", price: "R$ 300", image: "/cadeira_escrit.jpeg", tag: "indisponível", sold: true },
-  { id: 20, name: "Caixa de Transporte animal Tamanho Médio", description: "novo / sem avarias. Tipo de venda: imediata. Valor original: R$ 100", price: "R$ 60", image: "/caixa_felino.jpeg", tag: "indisponível", sold: true },
-  { id: 21, name: "Alexa Echo Dot 3° geração", description: "novo / sem avarias. Tipo de venda: final de maio. Valor original: R$ 650", price: "R$ 350", image: "/alexa.jpeg", tag: "indisponível", sold: true },
-  { id: 22, name: "Heartstopper Volumes 1, 2 e 3", description: "usado / sem avarias. Tipo de venda: imediata. Valor original: R$ 120", price: "R$ 50", image: "/heart.jpeg", tag: "indisponível", sold: true },
-  { id: 23, name: "Monitor Dell 24p.", description: "Em ótimo estado / 2 anos. Tipo de venda: final de maio. Valor original: R$ 1400", price: "R$ 800", image: "/monitordell.jpeg", tag: "disponível" },
+  { id: 1, name: "Carregador 33w Turbo tipo C", description: "novo / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 65", price: "R$ 30", image: "/carregador2.jpeg", tag: "indisponível", sold: true },
+  { id: 2, name: "Powerbank por indução 5000mAh Iphone", description: "usado / 1 mês. Tipo de venda: imediata.", originalPrice: "R$ 90", price: "R$ 30", image: "/power.jpeg", tag: "indisponível", sold: true },
+  { id: 3, name: "JBL Charge Essencial 2", description: "usado / 1 ano. Tipo de venda: imediata.", originalPrice: "R$ 900", price: "R$ 400", image: "/somjbl.jpeg", tag: "disponível" },
+  { id: 4, name: "Umidificador", description: "usado / 6 meses. Tipo de venda: imediata.", originalPrice: "R$ 60", price: "R$ 25", image: "/umidificador.jpeg", tag: "indisponível", sold: true },
+  { id: 5, name: "Ventilador Pequeno", description: "usado / 1 ano. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 40", image: "/ventilador2.jpeg", tag: "indisponível", sold: true },
+  { id: 6, name: "Air fryer Elgin 4L", description: "usado / 1 ano e meio. Tipo de venda: imediata.", originalPrice: "R$ 250", price: "R$ 120", image: "/airfry.jpeg", tag: "indisponível", sold: true },
+  { id: 7, name: "Aspirador inteligente", description: "pouco usado. Tipo de venda: imediata.", originalPrice: "R$ 75", price: "R$ 45", image: "/aspirador.jpeg", tag: "indisponível", sold: true },
+  { id: 8, name: "Geladeira Eletrolux 362 litros", description: "usado / 5 anos. Tipo de venda: final de maio.", originalPrice: "R$ 1700", price: "R$ 500", image: "/geladeira.jpeg", tag: "indisponível", sold: true },
+  { id: 9, name: "Fogão Atlas 4 bocas ( sem avarias )", description: "usado / 2 anos. Tipo de venda: final de maio.", originalPrice: "R$ 1200", price: "R$ 600", image: "/fogao.png", tag: "indisponível", sold: true },
+  { id: 10, name: "Tv Semp Roku 50p", description: "novo / 8 meses. Tipo de venda: final de maio.", originalPrice: "R$ 2000", price: "R$ 1700", priceNote: "à vista ou R$ 1800 parcelado", image: "/tv50.jpeg", tag: "disponível" },
+  { id: 11, name: "Sofá Beje ( laterais inclinadas )", description: "usado / 1 ano. Tipo de venda: imediata.", originalPrice: "R$ 300", price: "R$ 100", image: "/sofa.jpeg", tag: "indisponível", sold: true },
+  { id: 12, name: "Escudo Capitão América ( metal )", description: "usado / 8 meses. Tipo de venda: imediata.", originalPrice: "R$ 380", price: "R$ 150", image: "/escudo_frente.jpeg", tag: "indisponível", sold: true },
+  { id: 13, name: "Colchão Inflável Solteiro Multiuso Até 100Kgs", description: "usado / 8 meses. Tipo de venda: imediata.", originalPrice: "R$ 135", price: "R$ 80", image: "/colchao.jpeg", tag: "disponível" },
+  { id: 14, name: "Patins Inline Traxart 41", description: "usado / 8 meses. Tipo de venda: imediata.", originalPrice: "R$ 900", price: "R$ 350", image: "/patins.jpeg", tag: "disponível" },
+  { id: 15, name: "Abajur ( c/ avarias na parte interior )", description: "usado / 2 anos. Tipo de venda: imediata.", originalPrice: "R$ 90", price: "R$ 40", image: "/abajur2.jpeg", tag: "disponível" },
+  { id: 16, name: "Ferro de passar ( bom estado )", description: "usado / 1 ano. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/ferro.jpeg", tag: "indisponível", sold: true },
+  { id: 17, name: "Varal de chão Aço", description: "novo / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/varal.jpeg", tag: "indisponível", sold: true },
+  { id: 18, name: "Poltrona Chaise Sintética Média", description: "novo / 4 meses. Tipo de venda: imediata.", originalPrice: "R$ 1200", price: "R$ 900", image: "/poltrona.jpeg", tag: "disponível" },
+  { id: 19, name: "Cadeira escritório azul/preto", description: "usado / 3 anos / com avaria. Tipo de venda: imediata.", originalPrice: "R$ 650", price: "R$ 300", image: "/cadeira_escrit.jpeg", tag: "indisponível", sold: true },
+  { id: 20, name: "Caixa de Transporte animal Tamanho Médio", description: "novo / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 60", image: "/caixa_felino.jpeg", tag: "indisponível", sold: true },
+  { id: 21, name: "Alexa Echo Dot 3° geração", description: "novo / sem avarias. Tipo de venda: final de maio.", originalPrice: "R$ 650", price: "R$ 350", image: "/alexa.jpeg", tag: "indisponível", sold: true },
+  { id: 22, name: "Heartstopper Volumes 1, 2 e 3", description: "usado / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 50", image: "/heart.jpeg", tag: "indisponível", sold: true },
+  { id: 23, name: "Monitor Dell 24p.", description: "em ótimo estado / 2 anos. Tipo de venda: final de maio.", originalPrice: "R$ 1400", price: "R$ 800", image: "/monitordell.jpeg", tag: "disponível" },
   { id: 24, name: "Mini sapateira, comporta até 8 pares", description: "3 meses de uso. Tipo de venda: imediata.", price: "R$ 25", image: "/minisapateira.jpeg", tag: "indisponível", sold: true },
   { id: 25, name: "Rosa do deserto / 1 ano", description: "Tipo de venda: imediata.", price: "R$ 30", image: "/rosa_deserto.jpeg", tag: "disponível" },
-  { id: 26, name: "Alocácia Grande 7 meses", description: "Tipo de venda: imediata", price: "R$ 30", image: "/orquidea_grande.jpeg", tag: "indisponível", sold: true },
-  { id: 27, name: "Alocácia pequena 3 meses", description: "Tipo de venda: imediata", price: "R$ 20", image: "/orquidea.jpeg", tag: "indisponível", sold: true },
-  { id: 29, name: "Zamiocuca / 9 meses", description: "Tipo de venda: imediata", price: "R$ 25", image: "/zamiocuca.jpeg", tag: "disponível" },
-  { id: 30, name: "Jibóia / 1 ano e meio", description: "Tipo de venda: imediata", price: "R$ 25", image: "/jiboia.jpeg", tag: "disponível" },
-  { id: 31, name: "Cafeteira star wars / Mallory", description: "Usado / 2 anos. Tipo de venda: imediata", price: "R$ 50", image: "/cafeteira_starwars.jpeg", tag: "indisponível", sold: true },
-  { id: 32, name: "Balança Corporal 180kg Daaz", description: "Novo / sem avarias. Tipo de venda: imediata", price: "R$ 60", image: "/balanca_dazz.jpeg", tag: "indisponível", sold: true },
-  { id: 33, name: "Espada de São Jorge Grande", description: "Tipo de venda: imediata", price: "R$ 40", image: "/espada_sao_jorge_grande.jpeg", tag: "indisponível", sold: true },
-  { id: 34, name: "Espada de São Jorge pequena", description: "Tipo de venda: imediata", price: "R$ 25", image: "/espada_sao_jorge_pequena.jpeg", tag: "indisponível", sold: true },
-  { id: 35, name: "Pesos 3kg cada", description: "Tipo de venda: imediata", price: "R$ 15", image: "/pesos.jpeg", tag: "indisponível", sold: true },
-  { id: 36, name: "Teclado HYPER semimecânico", description: "Sem defeitos / 2 anos. Tipo de venda: imediata. Valor original: R$ 200", price: "R$ 100", image: "/teclado.jpeg", tag: "indisponível", sold: true },
-  { id: 37, name: "5 Potes herméticos", description: "Sem defeitos, Tipo de venda: imediata. Valor original: R$ 80", price: "R$ 50", image: "/potes.jpeg", tag: "indisponível", sold: true },
-  { id: 38, name: "Chapéu mario e luigi", description: "usado / Tipo de venda: imediata. Valor original: R$ 50 os dois", price: "R$ 25 os dois.", image: "/marioluigi.jpeg", tag: "indisponível", sold: true },
-  { id: 39, name: "Teclado POSITIVO", description: "Sem defeitos / com avarias na parte de baixo. Tipo de venda: imediata. Valor original: R$ 70", price: "R$ 20", image: "/teclado2.jpeg", tag: "disponível" },
-  { id: 40, name: "Livro Mitologia Nórdica", description: "Sem avarias. Tipo de venda: imediata", price: "R$ 10", image: "/mitologianordica.jpeg", tag: "indisponível", sold: true },
-  { id: 41, name: "Livro Com Amor, Simon", description: "Sem avarias. Tipo de venda: imediata.", price: "R$ 20", image: "/simon.jpeg", tag: "disponível" },
-  { id: 42, name: "Livro Me chame pelo seu nome", description: "Usado. Tipo de venda: imediata.", price: "R$ 20", image: "/callme.jpeg", tag: "disponível" },
-  { id: 43, name: "Livros saga Crepúsculo/Eclipse/Lua Nova", description: "Usado. Tipo de venda: imediata.", price: "R$ 40", image: "/crepusculo.jpeg", tag: "indisponível", sold: true },
-  { id: 44, name: "Livro A forma da água", description: "Seminovo. Tipo de venda: imediata.", price: "R$ 20", image: "/formadagua.jpeg", tag: "disponível" },
-  { id: 45, name: "Livro A Arte da Sabedoria", description: "Seminovo. Tipo de venda: imediata.", price: "R$ 10", image: "/arte.jpeg", tag: "indisponível", sold: true },
-  { id: 46, name: "Livro Paixão / um romance da série FALLEN", description: "Seminovo. Tipo de venda: imediata.", price: "R$ 20", image: "/paixao.jpeg", tag: "disponível" },
-  { id: 47, name: "Livro CORALINE", description: "Marcas de uso. Tipo de venda: imediata.", price: "R$ 15", image: "/coraline.jpeg", tag: "indisponível", sold: true },
+  { id: 26, name: "Alocácia Grande 7 meses", description: "Tipo de venda: imediata.", price: "R$ 30", image: "/orquidea_grande.jpeg", tag: "indisponível", sold: true },
+  { id: 27, name: "Alocácia pequena 3 meses", description: "Tipo de venda: imediata.", price: "R$ 20", image: "/orquidea.jpeg", tag: "indisponível", sold: true },
+  { id: 28, name: "Sapatos DARMAND Marrom seminovo", description: "usado poucas vezes / tamanho 41/42. Tipo de venda: imediata.", originalPrice: "R$ 250", price: "R$ 90", image: "/sapato_darmand.jpeg", tag: "disponível" },
+  { id: 29, name: "Zamiocuca / 9 meses", description: "Tipo de venda: imediata.", price: "R$ 25", image: "/zamiocuca.jpeg", tag: "disponível" },
+  { id: 30, name: "Jibóia / 1 ano e meio", description: "Tipo de venda: imediata.", price: "R$ 25", image: "/jiboia.jpeg", tag: "disponível" },
+  { id: 31, name: "Cafeteira star wars / Mallory", description: "usado / 2 anos. Tipo de venda: imediata.", price: "R$ 50", image: "/cafeteira_starwars.jpeg", tag: "indisponível", sold: true },
+  { id: 32, name: "Balança Corporal 180kg Daaz", description: "novo / sem avarias. Tipo de venda: imediata.", price: "R$ 60", image: "/balanca_dazz.jpeg", tag: "indisponível", sold: true },
+  { id: 33, name: "Espada de São Jorge Grande", description: "Tipo de venda: imediata.", price: "R$ 40", image: "/espada_sao_jorge_grande.jpeg", tag: "indisponível", sold: true },
+  { id: 34, name: "Espada de São Jorge pequena", description: "Tipo de venda: imediata.", price: "R$ 25", image: "/espada_sao_jorge_pequena.jpeg", tag: "indisponível", sold: true },
+  { id: 35, name: "Pesos 3kg cada", description: "Tipo de venda: imediata.", price: "R$ 15", image: "/pesos.jpeg", tag: "indisponível", sold: true },
+  { id: 36, name: "Teclado HYPER semimecânico", description: "sem defeitos / 2 anos. Tipo de venda: imediata.", originalPrice: "R$ 200", price: "R$ 100", image: "/teclado.jpeg", tag: "indisponível", sold: true },
+  { id: 37, name: "5 Potes herméticos", description: "sem defeitos. Tipo de venda: imediata.", originalPrice: "R$ 80", price: "R$ 50", image: "/potes.jpeg", tag: "indisponível", sold: true },
+  { id: 38, name: "Chapéu mario e luigi", description: "usado. Tipo de venda: imediata.", originalPrice: "R$ 50 os dois", price: "R$ 25 os dois.", image: "/marioluigi.jpeg", tag: "indisponível", sold: true },
+  { id: 39, name: "Teclado POSITIVO", description: "sem defeitos / com avarias na parte de baixo. Tipo de venda: imediata.", originalPrice: "R$ 70", price: "R$ 20", image: "/teclado2.jpeg", tag: "disponível" },
+  { id: 40, name: "Livro Mitologia Nórdica", description: "sem avarias. Tipo de venda: imediata.", price: "R$ 10", image: "/mitologianordica.jpeg", tag: "indisponível", sold: true },
+  { id: 41, name: "Livro Com Amor, Simon", description: "sem avarias. Tipo de venda: imediata.", price: "R$ 20", image: "/simon.jpeg", tag: "disponível" },
+  { id: 42, name: "Livro Me chame pelo seu nome", description: "usado. Tipo de venda: imediata.", price: "R$ 20", image: "/callme.jpeg", tag: "disponível" },
+  { id: 43, name: "Livros saga Crepúsculo/Eclipse/Lua Nova", description: "usado. Tipo de venda: imediata.", price: "R$ 40", image: "/crepusculo.jpeg", tag: "indisponível", sold: true },
+  { id: 44, name: "Livro A forma da água", description: "seminovo. Tipo de venda: imediata.", price: "R$ 20", image: "/formadagua.jpeg", tag: "disponível" },
+  { id: 45, name: "Livro A Arte da Sabedoria", description: "seminovo. Tipo de venda: imediata.", price: "R$ 10", image: "/arte.jpeg", tag: "indisponível", sold: true },
+  { id: 46, name: "Livro Paixão / um romance da série FALLEN", description: "seminovo. Tipo de venda: imediata.", price: "R$ 20", image: "/paixao.jpeg", tag: "disponível" },
+  { id: 47, name: "Livro CORALINE", description: "marcas de uso. Tipo de venda: imediata.", price: "R$ 15", image: "/coraline.jpeg", tag: "indisponível", sold: true },
   { id: 48, name: "Planta Comigo ninguém pode", description: "Tipo de venda: imediata.", price: "R$ 35", image: "/comigo.jpeg", tag: "disponível" },
-  { id: 49, name: "Livro O homem do castelo alto", description: "Marcas de uso. Tipo de venda: imediata.", price: "R$ 10", image: "/casteloalto.jpeg", tag: "disponível" },
-  { id: 50, name: "Cortina Blackout Cinza 1m90", description: "Blackout com avarias, parte do tecido sem avarias. Tipo de venda: imediata.", price: "R$ 40", image: "/cortina.jpeg", tag: "indisponível", sold: true },
-  { id: 51, name: "Manhwa On or Off: Volume 02 e 03 (Full Color)", description: "Novos. Tipo de venda: imediata.", price: "R$ 35 cada ou os 2 por 60", image: "/onoroff.jpeg", tag: "indisponível", sold: true },
-  { id: 52, name: "Jogo de 5 copos de vidro (1 quebrou)", description: "Novos/ nunca usados. Tipo de venda: imediata.", price: "R$ 20", image: "/copos.jpeg", tag: "indisponível", sold: true },
-  { id: 53, name: "2 Travessas de vidro", description: "Tamanho médio. Tipo de venda: imediata.", price: "R$ 20 cada um, 30 as duas", image: "/travessas.jpeg", tag: "indisponível", sold: true },
+  { id: 49, name: "Livro O homem do castelo alto", description: "marcas de uso. Tipo de venda: imediata.", price: "R$ 10", image: "/casteloalto.jpeg", tag: "disponível" },
+  { id: 50, name: "Cortina Blackout Cinza 1m90", description: "blackout com avarias, parte do tecido sem avarias. Tipo de venda: imediata.", price: "R$ 40", image: "/cortina.jpeg", tag: "indisponível", sold: true },
+  { id: 51, name: "Manhwa On or Off: Volume 02 e 03 (Full Color)", description: "novos. Tipo de venda: imediata.", price: "R$ 35 cada ou os 2 por 60", image: "/onoroff.jpeg", tag: "indisponível", sold: true },
+  { id: 52, name: "Jogo de 5 copos de vidro (1 quebrou)", description: "novos / nunca usados. Tipo de venda: imediata.", price: "R$ 20", image: "/copos.jpeg", tag: "indisponível", sold: true },
+  { id: 53, name: "2 Travessas de vidro", description: "tamanho médio. Tipo de venda: imediata.", price: "R$ 20 cada um, 30 as duas", image: "/travessas.jpeg", tag: "indisponível", sold: true },
   { id: 54, name: "Mop Giratório Esfregão Top Cabo Inox", description: "5 meses de uso. Tipo de venda: imediata.", price: "R$ 40", image: "/mop.jpeg", tag: "disponível" },
 ];
 
 export default function App() {
   const [search, setSearch] = useState("");
   const [darkMode, setDarkMode] = useState(false);
+  const [showSold, setShowSold] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowScrollTop(window.scrollY > 400);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const filteredItems = items.filter((item) =>
     item.name.toLowerCase().includes(search.toLowerCase())
@@ -303,7 +313,7 @@ export default function App() {
 
       {/* Available */}
       <h2 style={{ marginBottom: "1rem", color: darkMode ? COLORS.sand : COLORS.oliveMid, fontSize: "1.4rem" }}>
-        📦 Itens disponíveis
+        📦 Itens disponíveis ({availableItems.length})
       </h2>
       <div style={{ display: "grid", gap: "1.5rem", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
         {availableItems.map((item) => (
@@ -311,15 +321,63 @@ export default function App() {
         ))}
       </div>
 
-      {/* Sold */}
-      <h2 style={{ margin: "3rem 0 1rem", color: darkMode ? "#6b7060" : "#9a9a8a", fontSize: "1.4rem" }}>
-        ✅ Vendidos
-      </h2>
-      <div style={{ display: "grid", gap: "1.5rem", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-        {soldItems.map((item) => (
-          <ItemCard key={item.id} item={item} darkMode={darkMode} />
-        ))}
+      {/* Sold toggle */}
+      <div style={{ margin: "3rem 0 1rem", display: "flex", alignItems: "center", gap: "1rem" }}>
+        <h2 style={{ color: darkMode ? "#6b7060" : "#9a9a8a", fontSize: "1.4rem", margin: 0 }}>
+          ✅ Vendidos ({soldItems.length})
+        </h2>
+        <button
+          onClick={() => setShowSold(!showSold)}
+          style={{
+            padding: "0.4rem 1rem",
+            borderRadius: "10px",
+            border: `1px solid ${COLORS.sand}`,
+            backgroundColor: darkMode ? COLORS.cardDark : COLORS.creamDark,
+            color: darkMode ? COLORS.sand : COLORS.oliveMuted,
+            cursor: "pointer",
+            fontSize: "0.85rem",
+            fontFamily: "Georgia, serif",
+          }}
+        >
+          {showSold ? "Ocultar" : "Mostrar"}
+        </button>
       </div>
+
+      {showSold && (
+        <div style={{ display: "grid", gap: "1.5rem", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
+          {soldItems.map((item) => (
+            <ItemCard key={item.id} item={item} darkMode={darkMode} />
+          ))}
+        </div>
+      )}
+
+      {/* Scroll to top */}
+      {showScrollTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          style={{
+            position: "fixed",
+            bottom: "2rem",
+            right: "2rem",
+            width: "48px",
+            height: "48px",
+            borderRadius: "50%",
+            backgroundColor: COLORS.oliveMid,
+            color: COLORS.cream,
+            border: "none",
+            cursor: "pointer",
+            fontSize: "1.4rem",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 999,
+          }}
+          title="Voltar ao topo"
+        >
+          ↑
+        </button>
+      )}
     </div>
   );
 }
@@ -329,6 +387,10 @@ function ItemCard({ item, darkMode }) {
   const nameColor = darkMode ? "#d4c9a0" : "#3a5232";
   const descColor = darkMode ? "#8a9a7a" : "#6b7a5a";
   const priceColor = darkMode ? "#a8c584" : "#4a6741";
+
+  const whatsappMsg = encodeURIComponent(
+    `Olá, estava olhando seu bazar e tenho interesse no item: ${item.name}. Poderia me dar mais informações?`
+  );
 
   return (
     <div style={{
@@ -378,14 +440,26 @@ function ItemCard({ item, darkMode }) {
       <div style={{ padding: "1rem", flex: 1, display: "flex", flexDirection: "column", gap: "0.3rem" }}>
         <h2 style={{ fontSize: "1.1rem", color: nameColor, fontWeight: "700", margin: 0 }}>{item.name}</h2>
         <p style={{ fontSize: "0.85rem", color: descColor, margin: 0 }}>{item.description}</p>
-        <p style={{ fontWeight: "700", fontSize: "1.1rem", color: priceColor, margin: "0.3rem 0 0" }}>{item.price}</p>
+
+        {/* Price with original strikethrough */}
+        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginTop: "0.3rem", flexWrap: "wrap" }}>
+          {item.originalPrice && (
+            <span style={{ fontSize: "0.85rem", color: descColor, textDecoration: "line-through" }}>
+              {item.originalPrice}
+            </span>
+          )}
+          <span style={{ fontWeight: "700", fontSize: "1.1rem", color: priceColor }}>
+            {item.price}
+          </span>
+        </div>
+
         {item.priceNote && (
           <p style={{ fontSize: "0.8rem", color: descColor, margin: 0 }}>{item.priceNote}</p>
         )}
         <div style={{ marginTop: "auto", paddingTop: "0.8rem" }}>
           {!item.sold ? (
             <a
-              href="https://wa.me/5541995281904?text=Ol%C3%A1%2C%20estava%20olhando%20seu%20bazar%20e%20me%20interessei%20por%20alguns%20itens%2C%20poderia%20conversar%3F"
+              href={`https://wa.me/5541995281904?text=${whatsappMsg}`}
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -399,7 +473,6 @@ function ItemCard({ item, darkMode }) {
                 fontSize: "0.95rem",
                 fontFamily: "Georgia, serif",
                 fontWeight: "600",
-                transition: "background 0.2s",
               }}
             >
               Falar no WhatsApp
