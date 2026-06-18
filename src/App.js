@@ -150,7 +150,7 @@ const COLORS = {
 const items = [
   { id: 1, name: "Aquecedor elétrico 127v", description: "seminovo, 1 ano de uso. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/aquecedor.jpeg", tag: "disponível"},
   { id: 2, name: "Capa Verde Oliva - Fantasia Shein", description: "usado apenas 1 vez. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 70", image: "/CAPAVERDE.jpeg", tag: "disponível"},
-  { id: 3, name: "COLCHÃO NEWFLEX CASAL SUPER CONFORTAVEL", description: "seminovo / menos de 1 ano de uso. Tipo de venda: Combinar retirada.", originalPrice: "R$ 1000", price: "R$ 650", image: "/COLCHAO.jpeg", tag: "disponível" },
+  { id: 3, name: "COLCHÃO NEWFLEX CASAL SUPER CONFORTAVEL", description: "seminovo / menos de 1 ano de uso. Tipo de venda: Combinar retirada.", originalPrice: "R$ 1000", price: "R$ 650", image: "/COLCHAO2.jpeg", tag: "disponível" },
   { id: 4, name: "Furadeira Eletrica a baterial", description: "Novo / usado 2 vezes. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 90", image: "/FURADEIRA.jpeg", tag: "disponível" },
   { id: 5, name: "Guarda-chuva Médio", description: "Em ótimas condições. Tipo de venda: imediata.", originalPrice: "R$ 50", price: "R$ 25", image: "/guardachuva2.jpeg", tag: "disponível"},
   { id: 6, name: "Jaqueta ARGENTINA tam: M", description: "Em ótimas condições / Da Ricahuelo. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/JAQUETA3.jpeg", tag: "disponível"},
