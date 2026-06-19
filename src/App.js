@@ -161,9 +161,9 @@ const items = [
   { id: 11, name: "Suporte TV Parede", description: "Sem avarias/ 6 meses. Tipo de venda: imediata.", originalPrice: "R$ 60", price: "R$ 40", image: "/SUPORTETV.jpeg", tag: "disponível"},
   { id: 12, name: "Teclado Hmaston mecânico", description: "usado / 8 meses, parou de funcionar. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 30", image: "/tecladohmaston.jpeg", tag: "disponível" },
   { id: 13, name: "Ventilador WAP 8 Palhetas", description: "seminovo / sem avarias - 9 meses. Tipo de venda: imediata.", originalPrice: "R$ 135", price: "R$ 80", image: "/ventilador.jpeg", tag: "disponível" },
-  { id: 14, name: "Fogão Eltrolux 4 bocas com avaria", description: "usado / 1 boca ta com problema e vazando um pouco de gás. Tipo de venda: imediata.", price: "R$ 200", image: "/FOGAO.jpeg", tag: "disponível" },
+  { id: 14, name: "Fogão Eltrolux 4 bocas com avaria", description: "usado / 1 boca ta com problema e vazando um pouco de gás. Tipo de venda: imediata.", price: "R$ 200", image: "/FOGAO.jpeg", tag: "indisponível", sold: true },
   { id: 15, name: "Original ADIDAS TAM 41", description: "seminovo / 3 meses de uso. Tipo de venda: imediata.", originalPrice: "R$350", price: "R$ 250", image: "/ADIDAS1.jpeg", tag: "disponível" },
-  { id: 16, name: "Máquina de lavar Electrolux 8.0kg", description: "usado, funciona tudo / 2 anos. Tipo de venda: imediata.", price: "R$ 250", image: "/MAQUINA.jpeg", tag: "disponível"},
+  { id: 16, name: "Máquina de lavar Electrolux 8.0kg", description: "usado, funciona tudo / 2 anos. Tipo de venda: imediata.", price: "R$ 250", image: "/MAQUINA.jpeg", tag: "indisponível", sold: true },
   { id: 17, name: "Liquidificador OSTER 15 potências 4000w", description: "Usado / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 199", price: "R$ 90", image: "/LIQUIDIFICADOR.jpeg", tag: "disponível"},
   { id: 18, name: "Recipientes de vidro + recipiente para azeite", description: "novo / leve os 4. Tipo de venda: imediata.", price: "R$ 20", image: "VIDROS.jpeg", tag: "disponível" },
 ];
