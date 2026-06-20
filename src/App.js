@@ -165,7 +165,7 @@ const items = [
   { id: 15, name: "Original ADIDAS TAM 41", description: "seminovo / 3 meses de uso. Tipo de venda: imediata.", originalPrice: "R$350", price: "R$ 250", image: "/ADIDAS1.jpeg", tag: "disponível" },
   { id: 16, name: "Máquina de lavar Electrolux 8.0kg", description: "usado, funciona tudo / 2 anos. Tipo de venda: imediata.", price: "R$ 250", image: "/MAQUINA.jpeg", tag: "disponível"},
   { id: 17, name: "Liquidificador OSTER 15 potências 4000w", description: "Usado / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 149", price: "R$ 70", image: "/LIQUIDIFICADOR.jpeg", tag: "disponível"},
-  { id: 18, name: "Recipientes de vidro + recipiente para azeite", description: "novo / leve os 4. Tipo de venda: imediata!.", price: "R$ Doação", image: "VIDROS.jpeg", tag: "disponível" },
+  { id: 18, name: "Recipientes de vidro + recipiente para azeite", description: "novo / leve os 4. Tipo de venda: imediata!.", price: "R$ DOAÇÃO", image: "VIDROS.jpeg", tag: "disponível" },
 ];
 
 export default function App() {
