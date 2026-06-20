@@ -153,7 +153,7 @@ const items = [
   { id: 3, name: "COLCHÃO NEWFLEX CASAL SUPER CONFORTÁVEL", description: "seminovo / menos de 1 ano de uso. Tipo de venda: Combinar retirada.", originalPrice: "R$ 1000", price: "R$ 650", image: "/COLCHAO2.png", tag: "disponível" },
   { id: 4, name: "Furadeira à baterial", description: "Novo / usado 2 vezes. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 90", image: "/FURADEIRA.jpeg", tag: "disponível" },
   { id: 5, name: "Guarda-chuva Médio", description: "Em ótimas condições. Tipo de venda: imediata.", originalPrice: "R$ 50", price: "R$ 25", image: "/guardachuva2.jpeg", tag: "disponível"},
-  { id: 6, name: "Jaqueta ARGENTINA tam: M", description: "Em ótimas condições / Da Ricahuelo. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/JAQUETA3.jpeg", tag: "disponível"},
+  { id: 6, name: "Jaqueta ARGENTINA tam: M", description: "Em ótimas condições / Da Ricahuelo. Tipo de venda: imediata.", originalPrice: "R$ 80", price: "R$ 40", image: "/JAQUETA3.jpeg", tag: "disponível"},
   { id: 7, name: "Almofada travesseiro pescoço-viagem", description: "Novo. Tipo de venda: imediata.", originalPrice: "R$ 80", price: "Os dois por R$ 40", image: "/PESCOÇO.jpeg", tag: "disponível"},
   { id: 8, name: "Sofá Preto", description: "ótimas condições/ 2 anos. Tipo de venda: Imediata.", originalPrice: "R$ 700", price: "R$ 350", image: "/sofa2.jpeg", tag: "disponível"},
   { id: 9, name: "Fogão Atlas 4 bocas ( sem avarias )", description: "usado / 2 anos. Tipo de venda: final de maio.", originalPrice: "R$ 1200", price: "R$ 600", image: "/fogao.png", tag: "indisponível", sold: true },
