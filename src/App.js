@@ -149,23 +149,23 @@ const COLORS = {
 
 const items = [
   { id: 1, name: "Aquecedor elétrico 127v", description: "seminovo, 1 ano de uso. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/aquecedor.jpeg", tag: "disponível"},
-  { id: 2, name: "Capa Verde Oliva - Fantasia Shein", description: "usado apenas 1 vez. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 70", image: "/CAPAVERDE.jpeg", tag: "disponível"},
-  { id: 3, name: "COLCHÃO NEWFLEX CASAL SUPER CONFORTAVEL", description: "seminovo / menos de 1 ano de uso. Tipo de venda: Combinar retirada.", originalPrice: "R$ 1000", price: "R$ 650", image: "/COLCHAO2.png", tag: "disponível" },
-  { id: 4, name: "Furadeira Eletrica a baterial", description: "Novo / usado 2 vezes. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 90", image: "/FURADEIRA.jpeg", tag: "disponível" },
+  { id: 2, name: "Capa Verde Oliva - Fantasia Shein", description: "usado apenas 1 vez. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 70", image: "/CAPAVERDE.jpeg", tag: "indisponível", sold: true},
+  { id: 3, name: "COLCHÃO NEWFLEX CASAL SUPER CONFORTÁVEL", description: "seminovo / menos de 1 ano de uso. Tipo de venda: Combinar retirada.", originalPrice: "R$ 1000", price: "R$ 650", image: "/COLCHAO2.png", tag: "disponível" },
+  { id: 4, name: "Furadeira à baterial", description: "Novo / usado 2 vezes. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 90", image: "/FURADEIRA.jpeg", tag: "disponível" },
   { id: 5, name: "Guarda-chuva Médio", description: "Em ótimas condições. Tipo de venda: imediata.", originalPrice: "R$ 50", price: "R$ 25", image: "/guardachuva2.jpeg", tag: "disponível"},
   { id: 6, name: "Jaqueta ARGENTINA tam: M", description: "Em ótimas condições / Da Ricahuelo. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/JAQUETA3.jpeg", tag: "disponível"},
   { id: 7, name: "Almofada travesseiro pescoço-viagem", description: "Novo. Tipo de venda: imediata.", originalPrice: "R$ 80", price: "Os dois por R$ 40", image: "/PESCOÇO.jpeg", tag: "disponível"},
-  { id: 8, name: "Sofá Preto Macio", description: "ótimas condições/ 2 anos. Tipo de venda: Imediata.", originalPrice: "R$ 700", price: "R$ 350", image: "/sofa2.jpeg", tag: "disponível"},
+  { id: 8, name: "Sofá Preto", description: "ótimas condições/ 2 anos. Tipo de venda: Imediata.", originalPrice: "R$ 700", price: "R$ 350", image: "/sofa2.jpeg", tag: "disponível"},
   { id: 9, name: "Fogão Atlas 4 bocas ( sem avarias )", description: "usado / 2 anos. Tipo de venda: final de maio.", originalPrice: "R$ 1200", price: "R$ 600", image: "/fogao.png", tag: "indisponível", sold: true },
   { id: 10, name: "Tv LG 32' ", description: "Seminova / sem avarias. Tipo de venda: Imediata.", originalPrice: "R$ 950", price: "R$ 550", priceNote: "Com o suporte faço a 580", image: "/TVLG.jpeg", tag: "disponível" },
   { id: 11, name: "Suporte TV Parede", description: "Sem avarias/ 6 meses. Tipo de venda: imediata.", originalPrice: "R$ 60", price: "R$ 40", image: "/SUPORTETV.jpeg", tag: "disponível"},
-  { id: 12, name: "Teclado Hmaston mecânico", description: "usado / 8 meses, parou de funcionar. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 30", image: "/tecladohmaston.jpeg", tag: "disponível" },
+  { id: 12, name: "Teclado Hmaston mecânico", description: "usado / 8 meses, parou de funcionar. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ DOAÇÃO", image: "/tecladohmaston.jpeg", tag: "disponível" },
   { id: 13, name: "Ventilador WAP 8 Palhetas", description: "seminovo / sem avarias - 9 meses. Tipo de venda: imediata.", originalPrice: "R$ 135", price: "R$ 80", image: "/ventilador.jpeg", tag: "disponível" },
   { id: 14, name: "Fogão Eltrolux 4 bocas com avaria", description: "usado / 1 boca ta com problema e vazando um pouco de gás. Tipo de venda: imediata.", price: "R$ 200", image: "/FOGAO.jpeg", tag: "indisponível", sold: true },
   { id: 15, name: "Original ADIDAS TAM 41", description: "seminovo / 3 meses de uso. Tipo de venda: imediata.", originalPrice: "R$350", price: "R$ 250", image: "/ADIDAS1.jpeg", tag: "disponível" },
   { id: 16, name: "Máquina de lavar Electrolux 8.0kg", description: "usado, funciona tudo / 2 anos. Tipo de venda: imediata.", price: "R$ 250", image: "/MAQUINA.jpeg", tag: "indisponível", sold: true },
   { id: 17, name: "Liquidificador OSTER 15 potências 4000w", description: "Usado / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 199", price: "R$ 90", image: "/LIQUIDIFICADOR.jpeg", tag: "disponível"},
-  { id: 18, name: "Recipientes de vidro + recipiente para azeite", description: "novo / leve os 4. Tipo de venda: imediata.", price: "R$ 20", image: "VIDROS.jpeg", tag: "disponível" },
+  { id: 18, name: "Recipientes de vidro + recipiente para azeite", description: "novo / leve os 4. Tipo de venda: imediata!.", price: "R$ Doação", image: "VIDROS.jpeg", tag: "disponível" },
 ];
 
 export default function App() {
