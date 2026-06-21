@@ -148,7 +148,7 @@ const COLORS = {
 };
 
 const items = [
-  { id: 1, name: "Aquecedor elétrico 127v", description: "seminovo, 1 ano de uso. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/aquecedor.jpeg", tag: "disponível"},
+  { id: 1, name: "Aquecedor elétrico 127v", description: "seminovo, 1 ano de uso. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/aquecedor.jpeg", tag: "indisponível", sold: true},
   { id: 2, name: "Capa Verde Oliva - Fantasia Shein", description: "usado apenas 1 vez. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 70", image: "/CAPAVERDE.jpeg", tag: "indisponível", sold: true},
   { id: 3, name: "COLCHÃO NEWFLEX CASAL SUPER CONFORTÁVEL", description: "seminovo / menos de 1 ano de uso. Tipo de venda: Combinar retirada.", originalPrice: "R$ 1000", price: "R$ 650", image: "/COLCHAO2.png", tag: "disponível" },
   { id: 4, name: "Furadeira à baterial", description: "Novo / usado 2 vezes. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 90", image: "/FURADEIRA.jpeg", tag: "disponível" },
@@ -163,7 +163,7 @@ const items = [
   { id: 13, name: "Ventilador WAP 8 Palhetas", description: "seminovo / sem avarias - 9 meses. Tipo de venda: imediata.", originalPrice: "R$ 135", price: "R$ 80", image: "/ventilador.jpeg", tag: "disponível" },
   { id: 14, name: "Fogão Eltrolux 4 bocas com avaria", description: "usado / 1 boca ta com problema e vazando um pouco de gás. Tipo de venda: imediata.", price: "R$ 200", image: "/FOGAO.jpeg", tag: "indisponível", sold: true },
   { id: 15, name: "Original ADIDAS TAM 41", description: "seminovo / 3 meses de uso. Tipo de venda: imediata.", originalPrice: "R$350", price: "R$ 250", image: "/ADIDAS1.jpeg", tag: "disponível" },
-  { id: 16, name: "Máquina de lavar Electrolux 8.0kg", description: "usado, funciona tudo / 2 anos. Tipo de venda: imediata.", price: "R$ 250", image: "/MAQUINA.jpeg", tag: "disponível"},
+  { id: 16, name: "Máquina de lavar Electrolux 8.0kg", description: "usado, funciona tudo / 2 anos. Tipo de venda: imediata.", price: "R$ 250", image: "/MAQUINA.jpeg", tag: "indisponível", sold: true},
   { id: 17, name: "Liquidificador OSTER 15 potências 4000w", description: "Usado / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 149", price: "R$ 70", image: "/LIQUIDIFICADOR.jpeg", tag: "disponível"},
   { id: 18, name: "Recipientes de vidro + recipiente para azeite", description: "novo / leve os 4. Tipo de venda: imediata!.", price: "R$ DOAÇÃO", image: "VIDROS.jpeg", tag: "disponível" },
 ];
