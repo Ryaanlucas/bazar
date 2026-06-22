@@ -151,11 +151,11 @@ const items = [
   { id: 1, name: "Aquecedor elétrico 127v", description: "seminovo, 1 ano de uso. Tipo de venda: imediata.", originalPrice: "R$ 100", price: "R$ 50", image: "/aquecedor.jpeg", tag: "indisponível", sold: true},
   { id: 2, name: "Capa Verde Oliva - Fantasia Shein", description: "usado apenas 1 vez. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 70", image: "/CAPAVERDE.jpeg", tag: "indisponível", sold: true},
   { id: 3, name: "COLCHÃO NEWFLEX CASAL SUPER CONFORTÁVEL", description: "seminovo / menos de 1 ano de uso. Tipo de venda: Combinar retirada.", originalPrice: "R$ 1000", price: "R$ 650", image: "/COLCHAO2.png", tag: "disponível" },
-  { id: 4, name: "Furadeira à baterial", description: "Novo / usado 2 vezes. Tipo de venda: imediata.", originalPrice: "R$ 120", price: "R$ 90", image: "/FURADEIRA.jpeg", tag: "disponível" },
-  { id: 5, name: "Guarda-chuva Médio", description: "Em ótimas condições. Tipo de venda: imediata.", originalPrice: "R$ 50", price: "R$ 25", image: "/guardachuva2.jpeg", tag: "disponível"},
+  { id: 4, name: "Furadeira à baterial", description: "Novo / usado 2 vezes. Tipo de venda: imediata.", originalPrice: "R$ 110", price: "R$ 70", image: "/FURADEIRA.jpeg", tag: "disponível" },
+  { id: 5, name: "Guarda-chuva Médio", description: "Em ótimas condições. Tipo de venda: imediata.", originalPrice: "R$ 50", price: "R$ 20", image: "/guardachuva2.jpeg", tag: "disponível"},
   { id: 6, name: "Jaqueta ARGENTINA tam: M", description: "Em ótimas condições / Da Ricahuelo. Tipo de venda: imediata.", originalPrice: "R$ 80", price: "R$ 40", image: "/JAQUETA3.jpeg", tag: "disponível"},
   { id: 7, name: "Almofada travesseiro pescoço-viagem", description: "Novo. Tipo de venda: imediata.", originalPrice: "R$ 80", price: "Os dois por R$ 40", image: "/PESCOÇO.jpeg", tag: "disponível"},
-  { id: 8, name: "Sofá Preto", description: "ótimas condições/ 2 anos. Tipo de venda: Imediata.", originalPrice: "R$ 700", price: "R$ 350", image: "/sofa2.jpeg", tag: "disponível"},
+  { id: 8, name: "Sofá Preto", description: "ótimas condições/ 2 anos. Tipo de venda: Imediata.", originalPrice: "R$ 700", price: "R$ 330", image: "/sofa2.jpeg", tag: "disponível"},
   { id: 9, name: "Fogão Atlas 4 bocas ( sem avarias )", description: "usado / 2 anos. Tipo de venda: final de maio.", originalPrice: "R$ 1200", price: "R$ 600", image: "/fogao.png", tag: "indisponível", sold: true },
   { id: 10, name: "Tv LG 32' ", description: "Seminova / sem avarias. Tipo de venda: Imediata.", originalPrice: "R$ 950", price: "R$ 550", priceNote: "Com o suporte faço a 580", image: "/TVLG.jpeg", tag: "indisponível", sold:true},
   { id: 11, name: "Suporte TV Parede", description: "Sem avarias/ 6 meses. Tipo de venda: imediata.", originalPrice: "R$ 60", price: "R$ 40", image: "/SUPORTETV.jpeg", tag: "indisponível", sold: true},
@@ -166,6 +166,8 @@ const items = [
   { id: 16, name: "Máquina de lavar Electrolux 8.0kg", description: "usado, funciona tudo / 2 anos. Tipo de venda: imediata.", price: "R$ 250", image: "/MAQUINA.jpeg", tag: "indisponível", sold: true},
   { id: 17, name: "Liquidificador OSTER 15 potências 4000w", description: "Usado / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 149", price: "R$ 70", image: "/LIQUIDIFICADOR.jpeg", tag: "indisponível", sold: true},
   { id: 18, name: "Recipientes de vidro + recipiente para azeite", description: "novo / leve os 4. Tipo de venda: imediata!.", price: "R$ DOAÇÃO", image: "VIDROS.jpeg", tag: "disponível" },
+  { id: 19, name: "Base Box Baú Casal Marrom", description: "novo / Menos de 1 ano de uso. Tipo de venda: imediata!.", price: "R$ 650", image: "boxbau.jpeg", tag: "disponível" },
+  { id: 20, name: "Escorredor Louças aço inoxidavel", description: "usado / Menos de 1 ano de uso. Tipo de venda: imediata!.", price: "R$60", image: "escorredor.jpeg", tag: "disponível" },
 ];
 
 export default function App() {
