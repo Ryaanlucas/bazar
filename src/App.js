@@ -154,7 +154,7 @@ const items = [
   { id: 4, name: "Furadeira à baterial", description: "Novo / usado 2 vezes. Tipo de venda: imediata.", originalPrice: "R$ 110", price: "R$ 70", image: "/FURADEIRA.jpeg", tag: "disponível" },
   { id: 5, name: "Guarda-chuva Médio", description: "Em ótimas condições. Tipo de venda: imediata.", originalPrice: "R$ 50", price: "R$ 20", image: "/guardachuva2.jpeg", tag: "disponível"},
   { id: 6, name: "Jaqueta ARGENTINA tam: M", description: "Em ótimas condições / Da Ricahuelo. Tipo de venda: imediata.", originalPrice: "R$ 80", price: "R$ 40", image: "/JAQUETA3.jpeg", tag: "disponível"},
-  { id: 7, name: "Almofada travesseiro pescoço-viagem", description: "Novo. Tipo de venda: imediata.", originalPrice: "R$ 80", price: "Os dois por R$ 40", image: "/PESCOÇO.jpeg", tag: "disponível"},
+  { id: 7, name: "Almofada travesseiro pescoço-viagem", description: "Novo. Tipo de venda: imediata.", originalPrice: "R$ 80", price: "Os dois por R$ 40", image: "/PESCOÇO.jpeg", tag: "indisponível", sold:true},
   { id: 8, name: "Sofá Preto", description: "ótimas condições/ 2 anos. Tipo de venda: Imediata.", originalPrice: "R$ 700", price: "R$ 330", image: "/sofa2.jpeg", tag: "disponível"},
   { id: 9, name: "Fogão Atlas 4 bocas ( sem avarias )", description: "usado / 2 anos. Tipo de venda: final de maio.", originalPrice: "R$ 1200", price: "R$ 600", image: "/fogao.png", tag: "indisponível", sold: true },
   { id: 10, name: "Tv LG 32' ", description: "Seminova / sem avarias. Tipo de venda: Imediata.", originalPrice: "R$ 950", price: "R$ 550", priceNote: "Com o suporte faço a 580", image: "/TVLG.jpeg", tag: "indisponível", sold:true},
