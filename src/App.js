@@ -161,7 +161,7 @@ const items = [
   { id: 14, name: "Fogão Eltrolux 4 bocas com avaria", description: "usado / 1 boca ta com problema e vazando um pouco de gás. Tipo de venda: imediata.", price: "R$ 200", image: "/FOGAO.jpeg", tag: "indisponível", sold: true },
   { id: 16, name: "Máquina de lavar Electrolux 8.0kg", description: "usado, funciona tudo / 2 anos. Tipo de venda: imediata.", price: "R$ 250", image: "/MAQUINA.jpeg", tag: "indisponível", sold: true},
   { id: 17, name: "Liquidificador OSTER 15 potências 4000w", description: "Usado / sem avarias. Tipo de venda: imediata.", originalPrice: "R$ 149", price: "R$ 70", image: "/LIQUIDIFICADOR.jpeg", tag: "indisponível", sold: true},
-  { id: 18, name: "Recipientes de vidro + recipiente para azeite", description: "novo / leve os 4. Tipo de venda: imediata!.", price: "R$ DOAÇÃO", image: "VIDROS.jpeg", tag: "disponível" },
+  { id: 18, name: "Recipientes de vidro + recipiente para azeite", description: "novo / leve os 4. Tipo de venda: imediata!.", price: "R$ DOAÇÃO", image: "VIDROS.jpeg", tag: "indisponível", sold: true },
   { id: 19, name: "Base Box Baú Casal Marrom", description: "novo / Menos de 1 ano de uso. Tipo de venda: imediata!.", price: "R$ 650", image: "boxbau.jpeg", tag: "disponível" },
   { id: 20, name: "Escorredor Louças aço inoxidavel", description: "usado / Menos de 1 ano de uso. Tipo de venda: imediata!.", price: "R$60", image: "escorredor.jpeg", tag: "disponível" },
 ];
